@@ -36,6 +36,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328529402036:android:ab4726e4e21cf0bd",
+        "android_client_info": {
+          "package_name": "com.example.cbs.cbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328529402036-g4k1uam768v1hl8ikrg5pcr8csmbrv9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvqVeVi_knnEwLfdpAnjK51f-4wY0_HMQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
