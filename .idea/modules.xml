@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cbs.iml" filepath="$PROJECT_DIR$/cbs.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/ProjetAgile.iml" filepath="$PROJECT_DIR$/ProjetAgile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> parent of 5d69832... c'est un test les pd
     </modules>
   </component>
 </project>
