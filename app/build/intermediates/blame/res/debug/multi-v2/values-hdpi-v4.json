@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "D:\\MIAGE\\M2\\ProjetAgile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9904c75ff86c723c265aee1754340a53/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Fred\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bef2348b5c637c026c6f717dea7d74cd\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
