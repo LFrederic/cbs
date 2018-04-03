@@ -1,0 +1,882 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-core:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/3752fec5da325f224213a4e7ed0b790e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-12.0.0.aar/92f7d1d6084e580003593c7ab0ddc625/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-cast:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.0.aar/44ed17617da2e51777ba40d50a5b17d2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9904c75ff86c723c265aee1754340a53/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f1b6a09b493b6bca003572519057e48c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-tagmanager:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-12.0.0.aar/693688e94c6cee8b50eac75ca452213e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:17:1-54:12
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-12.0.0.aar/0479a60d627c369829abb0d9e722095c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-12.0.0.aar/9a90a0ebfc5e98392bbe29e6285df971/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-12.0.0.aar/22b5feab285b0399d9e7031bb43b5a91/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-config:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-12.0.0.aar/ae5eec98e05928fe4b2fa290e3d0311c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-awareness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-12.0.0.aar/01c44db308921973c7e702b8e42519d9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-games:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-12.0.0.aar/ddf56200668ead2afc9309d5f2d23ca4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-drive:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-12.0.0.aar/e8e8260c1a87883560a6231313a5f542/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-fido:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-12.0.0.aar/e53b3e1e4a015e15c2e53c961c4dc438/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-dynamic-links:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.0.aar/379606bee0ed494cb4440781e4e384d9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-fitness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-12.0.0.aar/3621a07782a97e59e83756c5b847b03f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-appindexing:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-12.0.0.aar/b9a76290c48bc366d3a2e2c2940c239b/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-wallet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-12.0.0.aar/26f646bd328629606a3f3b4213754971/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-identity:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-12.0.0.aar/5542d004caab3d96c24961081a0f239c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-instantapps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-12.0.0.aar/28c1179739ff0c4fc2cf8edf1c6b9807/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-location:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.0.aar/12f260311dc32bdacb18a0a5d6459996/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-12.0.0.aar/3a84fd26eba25121bf45f9aeae2813f4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-panorama:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-12.0.0.aar/e45c69db4d8f73897d7d8cb7b4060884/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-plus:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-12.0.0.aar/b45bc9b811c53b33cb562b90db929235/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-safetynet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-12.0.0.aar/c290123de1545c490cfc4dfb3e65ffa6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.0.aar/f7a104ab2395d02d85bb1be6a68f3831/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.0.aar/abc12406ec17951fbf0348523f57bd45/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-wearable:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-12.0.0.aar/5f52b49fb6316899371c15fe754f5972/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-database:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/b22ad277965029a747e0067c438625d4/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/3bb943f9041da4ea06b2a9e9f4fd83c2/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/7edfd504d2a7d4dd1001d10d0380a9d9/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/b3929a72dc4dd497af330cdd8b4a438d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.0.aar/031ad4d9264c71432ce86987cdca1b7f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/bbdeecee793a681f4359ccf69be23b39/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-gass:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-12.0.0.aar/c455f409f04ed6df8734f502d18b7eaf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/823c208860a61d3669370dec0f461c3f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/c9eee5388fddf4fb9b2717c6d8ea4762/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/bf2182c09435b09bfb4e53c680c95b76/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/3df456719919863b55d4669815f86014/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/d53ac9213bada28f99f229bb988c23e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/add3d30d903659d6ae45126b572223ab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/dea95d2a6e6e72eac68b6f2ac313a27b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/244c7e186b6b1ea1d719759d4399acbd/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/cbe77a3dcd839a9e4b580cdeb28ce1f9/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/53cb7d5de031f77df6221d5cc3afd067/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/2ee7606e01cc640e6b8c9af3fc4c0781/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/c0ff0ee0edffdc8443cd826ebc353e92/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-ads-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.0.aar/8b2be5d5cabb1c5d3e8909eba78d97fe/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-ads-lite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-license-12.0.0.aar/4831c52e14fb85877f746f602f48b770/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-license-12.0.0.aar/742d8199c52c85ca209b2e5d7a422de3/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-license-12.0.0.aar/2287bd85dc4c4895e74a8854ee768b3a/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-appinvite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.0.aar/9ec0d4ee2b13d6768c9f4196977142da/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-12.0.0.aar/bbee8a95ee5e7734b333ad4773fb43ac/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-12.0.0.aar/e49fc966c24e6714e5f526a8a1ca1eb1/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-cast-framework-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-license-12.0.0.aar/2894e1b8ec90c3237ddd86cbfde88ab7/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-cast-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-license-12.0.0.aar/a25aafed727e0c604a4210e38d0be135/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-config-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-license-12.0.0.aar/24330473d02801c4783b1ec34a01864f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-awareness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-12.0.0.aar/279ce8a911dbfb92e0b415aafe5c7716/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-crash-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-license-12.0.0.aar/b7a72c43d2499334148ea9865c859e85/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-drive-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-12.0.0.aar/1ecfdfccb44f74842a72a8f26aef3230/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-fido-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-license-12.0.0.aar/d70dd0d34921d34dbb49e11da4818e75/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/bc301c7a5ac67e8c5579aa44f58a5dde/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/49e8a7bf643ab3722eaed9e2444a0e74/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.0.aar/38e837a3aa0b8a475931e22bb0783baa/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/8029903d4d1f3cbda2742d96834a4d26/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/e30ec1eed034417eb416d12fc495bbba/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/559abf1dbb0e8a570c05f576760fe9a1/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/5a98f5662e5efa6b7c420b8efd302c6e/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-fitness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-license-12.0.0.aar/c7a9f9f7759edd34c7a107e908685eb5/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-games-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-license-12.0.0.aar/7561f5991fb9acf7c56c0951163b849f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-gass-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-license-12.0.0.aar/269c83818508eabcfd2aaa4db0133ed9/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-gcm-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-license-12.0.0.aar/9f6537bcb845360d599073a5c145ac29/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-appindexing-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-12.0.0.aar/0dba80d9c330cd1a9ff48d9ed8f780e3/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-identity-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-12.0.0.aar/82332589119eaaa5dc1cd8bc750ba829/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-license-12.0.0.aar/2a05270f4b90cd7da0633db232163ff6/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-instantapps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-license-12.0.0.aar/80aa99c685fb4bc5650953cef8027944/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.0.aar/1198060a899ab94f37e602c45562c3bc/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.0.aar/9fb71363b7b1510bd662bd77c21d1a6e/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/fa08f8b1db3739511490d3de5182a9dc/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-nearby-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-license-12.0.0.aar/bad37a9a7a7d380afc63dcf90d4c649d/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-panorama-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-license-12.0.0.aar/461b180351a6d400519e36a328471ede/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-license-12.0.0.aar/deaac56f86f27a356b9e13b028b5ad9a/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-plus-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-license-12.0.0.aar/0f7e7b697173aef0f82735c9f758a4a6/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-safetynet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-license-12.0.0.aar/1702c0deb5c8f7a3fc75f44661d50849/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tagmanager-api-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-license-12.0.0.aar/bd55cb7b6ae41507538134bc7fc9cddd/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tagmanager-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-license-12.0.0.aar/766aa8577e6a78176495e427fc3bdf8f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-license-12.0.0.aar/2b65512553ab79a734de0dfb2b6d3989/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.0.aar/4a3c3087a36e9c86c02b1a4e6a614296/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.0.aar/fd2881db7eb8176b90f0d7889fdd82da/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-wallet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.0.aar/e451409b9eaace5de1f3d479a09f3967/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-wearable-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.0.aar/1470e727b49a6049454d34c1365bc822/AndroidManifest.xml:2:1-8:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/628389794e8fe0ea1ca9a6149bbaaef9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/788dceb8521ccd588220741264987a4f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6cb792c57a8e3dae42f66111655b7cfd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/770885e48333b74bb7bd82ac8802f7c7/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.google.firebase:firebase-core:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/3752fec5da325f224213a4e7ed0b790e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/3752fec5da325f224213a4e7ed0b790e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-12.0.0.aar/92f7d1d6084e580003593c7ab0ddc625/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-12.0.0.aar/92f7d1d6084e580003593c7ab0ddc625/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.gms:play-services-cast:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.0.aar/44ed17617da2e51777ba40d50a5b17d2/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-cast:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.0.aar/44ed17617da2e51777ba40d50a5b17d2/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f1b6a09b493b6bca003572519057e48c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f1b6a09b493b6bca003572519057e48c/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:26:5-45:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:26:5-45:19
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:29:5-45:19
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:29:5-45:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-12.0.0.aar/0479a60d627c369829abb0d9e722095c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-12.0.0.aar/0479a60d627c369829abb0d9e722095c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:24:5-35:19
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:24:5-35:19
+MERGED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-config:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-12.0.0.aar/ae5eec98e05928fe4b2fa290e3d0311c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-config:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-12.0.0.aar/ae5eec98e05928fe4b2fa290e3d0311c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-awareness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-12.0.0.aar/01c44db308921973c7e702b8e42519d9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-awareness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-12.0.0.aar/01c44db308921973c7e702b8e42519d9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-12.0.0.aar/ddf56200668ead2afc9309d5f2d23ca4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-12.0.0.aar/ddf56200668ead2afc9309d5f2d23ca4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-12.0.0.aar/e8e8260c1a87883560a6231313a5f542/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-12.0.0.aar/e8e8260c1a87883560a6231313a5f542/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fido:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-12.0.0.aar/e53b3e1e4a015e15c2e53c961c4dc438/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-12.0.0.aar/e53b3e1e4a015e15c2e53c961c4dc438/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-dynamic-links:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.0.aar/379606bee0ed494cb4440781e4e384d9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-dynamic-links:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.0.aar/379606bee0ed494cb4440781e4e384d9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-fitness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-12.0.0.aar/3621a07782a97e59e83756c5b847b03f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-12.0.0.aar/3621a07782a97e59e83756c5b847b03f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-appindexing:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-12.0.0.aar/b9a76290c48bc366d3a2e2c2940c239b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-appindexing:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-12.0.0.aar/b9a76290c48bc366d3a2e2c2940c239b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-12.0.0.aar/5542d004caab3d96c24961081a0f239c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-12.0.0.aar/5542d004caab3d96c24961081a0f239c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-location:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.0.aar/12f260311dc32bdacb18a0a5d6459996/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.0.aar/12f260311dc32bdacb18a0a5d6459996/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-12.0.0.aar/3a84fd26eba25121bf45f9aeae2813f4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-12.0.0.aar/3a84fd26eba25121bf45f9aeae2813f4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-panorama:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-12.0.0.aar/e45c69db4d8f73897d7d8cb7b4060884/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-panorama:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-12.0.0.aar/e45c69db4d8f73897d7d8cb7b4060884/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-12.0.0.aar/b45bc9b811c53b33cb562b90db929235/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-12.0.0.aar/b45bc9b811c53b33cb562b90db929235/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-12.0.0.aar/c290123de1545c490cfc4dfb3e65ffa6/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-12.0.0.aar/c290123de1545c490cfc4dfb3e65ffa6/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.0.aar/f7a104ab2395d02d85bb1be6a68f3831/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.0.aar/f7a104ab2395d02d85bb1be6a68f3831/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.0.aar/abc12406ec17951fbf0348523f57bd45/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.0.aar/abc12406ec17951fbf0348523f57bd45/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-wearable:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-12.0.0.aar/5f52b49fb6316899371c15fe754f5972/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-12.0.0.aar/5f52b49fb6316899371c15fe754f5972/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/b3929a72dc4dd497af330cdd8b4a438d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/b3929a72dc4dd497af330cdd8b4a438d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-gass:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-12.0.0.aar/c455f409f04ed6df8734f502d18b7eaf/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-12.0.0.aar/c455f409f04ed6df8734f502d18b7eaf/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/823c208860a61d3669370dec0f461c3f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/823c208860a61d3669370dec0f461c3f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/244c7e186b6b1ea1d719759d4399acbd/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/244c7e186b6b1ea1d719759d4399acbd/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/cbe77a3dcd839a9e4b580cdeb28ce1f9/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/cbe77a3dcd839a9e4b580cdeb28ce1f9/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/53cb7d5de031f77df6221d5cc3afd067/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/53cb7d5de031f77df6221d5cc3afd067/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/2ee7606e01cc640e6b8c9af3fc4c0781/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/2ee7606e01cc640e6b8c9af3fc4c0781/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/c0ff0ee0edffdc8443cd826ebc353e92/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/c0ff0ee0edffdc8443cd826ebc353e92/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-ads-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.0.aar/8b2be5d5cabb1c5d3e8909eba78d97fe/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-ads-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.0.aar/8b2be5d5cabb1c5d3e8909eba78d97fe/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-ads-lite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-license-12.0.0.aar/4831c52e14fb85877f746f602f48b770/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-ads-lite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-license-12.0.0.aar/4831c52e14fb85877f746f602f48b770/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-license-12.0.0.aar/742d8199c52c85ca209b2e5d7a422de3/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-analytics-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-license-12.0.0.aar/742d8199c52c85ca209b2e5d7a422de3/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-license-12.0.0.aar/2287bd85dc4c4895e74a8854ee768b3a/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-license-12.0.0.aar/2287bd85dc4c4895e74a8854ee768b3a/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-appinvite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.0.aar/9ec0d4ee2b13d6768c9f4196977142da/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-appinvite-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-license-12.0.0.aar/9ec0d4ee2b13d6768c9f4196977142da/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-12.0.0.aar/bbee8a95ee5e7734b333ad4773fb43ac/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-12.0.0.aar/bbee8a95ee5e7734b333ad4773fb43ac/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-auth-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-12.0.0.aar/e49fc966c24e6714e5f526a8a1ca1eb1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-auth-base-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-12.0.0.aar/e49fc966c24e6714e5f526a8a1ca1eb1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-cast-framework-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-license-12.0.0.aar/2894e1b8ec90c3237ddd86cbfde88ab7/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-cast-framework-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-license-12.0.0.aar/2894e1b8ec90c3237ddd86cbfde88ab7/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-cast-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-license-12.0.0.aar/a25aafed727e0c604a4210e38d0be135/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-cast-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-license-12.0.0.aar/a25aafed727e0c604a4210e38d0be135/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-config-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-license-12.0.0.aar/24330473d02801c4783b1ec34a01864f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-config-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-license-12.0.0.aar/24330473d02801c4783b1ec34a01864f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-awareness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-12.0.0.aar/279ce8a911dbfb92e0b415aafe5c7716/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-awareness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-12.0.0.aar/279ce8a911dbfb92e0b415aafe5c7716/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-crash-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-license-12.0.0.aar/b7a72c43d2499334148ea9865c859e85/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-crash-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-license-12.0.0.aar/b7a72c43d2499334148ea9865c859e85/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-drive-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-12.0.0.aar/1ecfdfccb44f74842a72a8f26aef3230/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-drive-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-12.0.0.aar/1ecfdfccb44f74842a72a8f26aef3230/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-fido-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-license-12.0.0.aar/d70dd0d34921d34dbb49e11da4818e75/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-fido-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-license-12.0.0.aar/d70dd0d34921d34dbb49e11da4818e75/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/bc301c7a5ac67e8c5579aa44f58a5dde/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/bc301c7a5ac67e8c5579aa44f58a5dde/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/49e8a7bf643ab3722eaed9e2444a0e74/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/49e8a7bf643ab3722eaed9e2444a0e74/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.0.aar/38e837a3aa0b8a475931e22bb0783baa/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.0.aar/38e837a3aa0b8a475931e22bb0783baa/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/8029903d4d1f3cbda2742d96834a4d26/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/8029903d4d1f3cbda2742d96834a4d26/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/e30ec1eed034417eb416d12fc495bbba/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/e30ec1eed034417eb416d12fc495bbba/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/559abf1dbb0e8a570c05f576760fe9a1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/559abf1dbb0e8a570c05f576760fe9a1/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/5a98f5662e5efa6b7c420b8efd302c6e/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/5a98f5662e5efa6b7c420b8efd302c6e/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-fitness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-license-12.0.0.aar/c7a9f9f7759edd34c7a107e908685eb5/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-fitness-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-license-12.0.0.aar/c7a9f9f7759edd34c7a107e908685eb5/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-games-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-license-12.0.0.aar/7561f5991fb9acf7c56c0951163b849f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-games-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-license-12.0.0.aar/7561f5991fb9acf7c56c0951163b849f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-gass-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-license-12.0.0.aar/269c83818508eabcfd2aaa4db0133ed9/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-gass-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-license-12.0.0.aar/269c83818508eabcfd2aaa4db0133ed9/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-gcm-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-license-12.0.0.aar/9f6537bcb845360d599073a5c145ac29/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-gcm-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-license-12.0.0.aar/9f6537bcb845360d599073a5c145ac29/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-appindexing-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-12.0.0.aar/0dba80d9c330cd1a9ff48d9ed8f780e3/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-appindexing-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-12.0.0.aar/0dba80d9c330cd1a9ff48d9ed8f780e3/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-identity-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-12.0.0.aar/82332589119eaaa5dc1cd8bc750ba829/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-identity-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-12.0.0.aar/82332589119eaaa5dc1cd8bc750ba829/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-license-12.0.0.aar/2a05270f4b90cd7da0633db232163ff6/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-iid-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-license-12.0.0.aar/2a05270f4b90cd7da0633db232163ff6/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-instantapps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-license-12.0.0.aar/80aa99c685fb4bc5650953cef8027944/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-instantapps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-license-12.0.0.aar/80aa99c685fb4bc5650953cef8027944/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.0.aar/1198060a899ab94f37e602c45562c3bc/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-location-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.0.aar/1198060a899ab94f37e602c45562c3bc/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.0.aar/9fb71363b7b1510bd662bd77c21d1a6e/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.0.aar/9fb71363b7b1510bd662bd77c21d1a6e/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/fa08f8b1db3739511490d3de5182a9dc/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/fa08f8b1db3739511490d3de5182a9dc/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-nearby-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-license-12.0.0.aar/bad37a9a7a7d380afc63dcf90d4c649d/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-nearby-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-license-12.0.0.aar/bad37a9a7a7d380afc63dcf90d4c649d/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-panorama-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-license-12.0.0.aar/461b180351a6d400519e36a328471ede/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-panorama-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-license-12.0.0.aar/461b180351a6d400519e36a328471ede/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-license-12.0.0.aar/deaac56f86f27a356b9e13b028b5ad9a/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-license-12.0.0.aar/deaac56f86f27a356b9e13b028b5ad9a/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-plus-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-license-12.0.0.aar/0f7e7b697173aef0f82735c9f758a4a6/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-plus-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-license-12.0.0.aar/0f7e7b697173aef0f82735c9f758a4a6/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-safetynet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-license-12.0.0.aar/1702c0deb5c8f7a3fc75f44661d50849/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-safetynet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-license-12.0.0.aar/1702c0deb5c8f7a3fc75f44661d50849/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-license-12.0.0.aar/bd55cb7b6ae41507538134bc7fc9cddd/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-license-12.0.0.aar/bd55cb7b6ae41507538134bc7fc9cddd/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-license-12.0.0.aar/766aa8577e6a78176495e427fc3bdf8f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-license-12.0.0.aar/766aa8577e6a78176495e427fc3bdf8f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-license-12.0.0.aar/2b65512553ab79a734de0dfb2b6d3989/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-license-12.0.0.aar/2b65512553ab79a734de0dfb2b6d3989/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.0.aar/4a3c3087a36e9c86c02b1a4e6a614296/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.0.aar/4a3c3087a36e9c86c02b1a4e6a614296/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.0.aar/fd2881db7eb8176b90f0d7889fdd82da/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.0.aar/fd2881db7eb8176b90f0d7889fdd82da/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-wallet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.0.aar/e451409b9eaace5de1f3d479a09f3967/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-wallet-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.0.aar/e451409b9eaace5de1f3d479a09f3967/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-wearable-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.0.aar/1470e727b49a6049454d34c1365bc822/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-wearable-license:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.0.aar/1470e727b49a6049454d34c1365bc822/AndroidManifest.xml:5:5-6:19
+	android:supportsRtl
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.comebacksafe.comebacksafe.MainActivity
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/3752fec5da325f224213a4e7ed0b790e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/3752fec5da325f224213a4e7ed0b790e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-12.0.0.aar/92f7d1d6084e580003593c7ab0ddc625/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-12.0.0.aar/92f7d1d6084e580003593c7ab0ddc625/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cast:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.0.aar/44ed17617da2e51777ba40d50a5b17d2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cast:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.0.aar/44ed17617da2e51777ba40d50a5b17d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9904c75ff86c723c265aee1754340a53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9904c75ff86c723c265aee1754340a53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f1b6a09b493b6bca003572519057e48c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/f1b6a09b493b6bca003572519057e48c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-12.0.0.aar/693688e94c6cee8b50eac75ca452213e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-12.0.0.aar/693688e94c6cee8b50eac75ca452213e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-12.0.0.aar/0479a60d627c369829abb0d9e722095c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-12.0.0.aar/0479a60d627c369829abb0d9e722095c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-12.0.0.aar/9a90a0ebfc5e98392bbe29e6285df971/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-12.0.0.aar/9a90a0ebfc5e98392bbe29e6285df971/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-12.0.0.aar/22b5feab285b0399d9e7031bb43b5a91/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-12.0.0.aar/22b5feab285b0399d9e7031bb43b5a91/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-config:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-12.0.0.aar/ae5eec98e05928fe4b2fa290e3d0311c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-config:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-config-12.0.0.aar/ae5eec98e05928fe4b2fa290e3d0311c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-awareness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-12.0.0.aar/01c44db308921973c7e702b8e42519d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-awareness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-awareness-12.0.0.aar/01c44db308921973c7e702b8e42519d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-12.0.0.aar/ddf56200668ead2afc9309d5f2d23ca4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-games-12.0.0.aar/ddf56200668ead2afc9309d5f2d23ca4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-12.0.0.aar/e8e8260c1a87883560a6231313a5f542/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-drive-12.0.0.aar/e8e8260c1a87883560a6231313a5f542/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-fido:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-12.0.0.aar/e53b3e1e4a015e15c2e53c961c4dc438/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fido-12.0.0.aar/e53b3e1e4a015e15c2e53c961c4dc438/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-dynamic-links:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.0.aar/379606bee0ed494cb4440781e4e384d9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-dynamic-links:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-12.0.0.aar/379606bee0ed494cb4440781e4e384d9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fitness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-12.0.0.aar/3621a07782a97e59e83756c5b847b03f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-fitness:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-fitness-12.0.0.aar/3621a07782a97e59e83756c5b847b03f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appindexing:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-12.0.0.aar/b9a76290c48bc366d3a2e2c2940c239b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appindexing:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-12.0.0.aar/b9a76290c48bc366d3a2e2c2940c239b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-12.0.0.aar/26f646bd328629606a3f3b4213754971/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wallet-12.0.0.aar/26f646bd328629606a3f3b4213754971/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-12.0.0.aar/5542d004caab3d96c24961081a0f239c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-identity-12.0.0.aar/5542d004caab3d96c24961081a0f239c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-instantapps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-12.0.0.aar/28c1179739ff0c4fc2cf8edf1c6b9807/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-instantapps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-12.0.0.aar/28c1179739ff0c4fc2cf8edf1c6b9807/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.0.aar/12f260311dc32bdacb18a0a5d6459996/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-location-12.0.0.aar/12f260311dc32bdacb18a0a5d6459996/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-12.0.0.aar/3a84fd26eba25121bf45f9aeae2813f4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-places-12.0.0.aar/3a84fd26eba25121bf45f9aeae2813f4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-panorama:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-12.0.0.aar/e45c69db4d8f73897d7d8cb7b4060884/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-panorama:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-panorama-12.0.0.aar/e45c69db4d8f73897d7d8cb7b4060884/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-plus:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-12.0.0.aar/b45bc9b811c53b33cb562b90db929235/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-plus:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-plus-12.0.0.aar/b45bc9b811c53b33cb562b90db929235/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-12.0.0.aar/c290123de1545c490cfc4dfb3e65ffa6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-12.0.0.aar/c290123de1545c490cfc4dfb3e65ffa6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.0.aar/f7a104ab2395d02d85bb1be6a68f3831/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-12.0.0.aar/f7a104ab2395d02d85bb1be6a68f3831/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.0.aar/abc12406ec17951fbf0348523f57bd45/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-12.0.0.aar/abc12406ec17951fbf0348523f57bd45/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-wearable:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-12.0.0.aar/5f52b49fb6316899371c15fe754f5972/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-wearable-12.0.0.aar/5f52b49fb6316899371c15fe754f5972/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/b22ad277965029a747e0067c438625d4/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/b22ad277965029a747e0067c438625d4/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/3bb943f9041da4ea06b2a9e9f4fd83c2/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/3bb943f9041da4ea06b2a9e9f4fd83c2/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/7edfd504d2a7d4dd1001d10d0380a9d9/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/7edfd504d2a7d4dd1001d10d0380a9d9/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/b3929a72dc4dd497af330cdd8b4a438d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/b3929a72dc4dd497af330cdd8b4a438d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.0.aar/031ad4d9264c71432ce86987cdca1b7f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-ads:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.0.aar/031ad4d9264c71432ce86987cdca1b7f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/bbdeecee793a681f4359ccf69be23b39/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/bbdeecee793a681f4359ccf69be23b39/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-gass:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-12.0.0.aar/c455f409f04ed6df8734f502d18b7eaf/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gass-12.0.0.aar/c455f409f04ed6df8734f502d18b7eaf/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/c9eee5388fddf4fb9b2717c6d8ea4762/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/c9eee5388fddf4fb9b2717c6d8ea4762/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/bf2182c09435b09bfb4e53c680c95b76/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/bf2182c09435b09bfb4e53c680c95b76/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/3df456719919863b55d4669815f86014/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/3df456719919863b55d4669815f86014/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/d53ac9213bada28f99f229bb988c23e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/d53ac9213bada28f99f229bb988c23e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/add3d30d903659d6ae45126b572223ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/add3d30d903659d6ae45126b572223ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/dea95d2a6e6e72eac68b6f2ac313a27b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/dea95d2a6e6e72eac68b6f2ac313a27b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/628389794e8fe0ea1ca9a6149bbaaef9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/628389794e8fe0ea1ca9a6149bbaaef9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/788dceb8521ccd588220741264987a4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/788dceb8521ccd588220741264987a4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6cb792c57a8e3dae42f66111655b7cfd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6cb792c57a8e3dae42f66111655b7cfd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/770885e48333b74bb7bd82ac8802f7c7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/770885e48333b74bb7bd82ac8802f7c7/AndroidManifest.xml:20:5-44
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.android.gms:play-services-ads:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.0.aar/031ad4d9264c71432ce86987cdca1b7f/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/054a54feb1be041a8da9ebbe64ef2f67/AndroidManifest.xml:24:13-85
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:8:9-100
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:8:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:10:9-104
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:10:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:11:9-93
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.0.aar/5885d5f517e11e266201d1def9b21be7/AndroidManifest.xml:11:18-90
+meta-data#android.support.VERSION
+ADDED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/12d466401586b74256d5d824130bdcd4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2eb4bcb379a026ed856d9f5aff586093/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:palette-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/palette-v7-26.1.0.aar/3c1730619286d4522e9b616f651a19d1/AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:mediarouter-v7:26.1.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/96332e6a931a7491ef2bfbfe6b74dfb4/AndroidManifest.xml:24:13-51
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.0.aar/7ccf536ba81e08348ada414408ca313d/AndroidManifest.xml:22:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-nearby:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-nearby-12.0.0.aar/d3273f3ecdc22924afa05ca97402a3c8/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:24:22-76
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:27:9-30:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:29:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:28:13-79
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:32:9-44:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:35:13-37
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:33:13-87
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.${applicationId}
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:36:13-43:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.com.comebacksafe.comebacksafe
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:36:13-43:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:37:17-72
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:37:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:39:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:41:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:42:17-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.0.aar/5d12a3fc462730b4bb15f8c81cb23a03/AndroidManifest.xml:42:27-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:27:5-68
+MERGED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:27:5-68
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:27:5-68
+MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.0.aar/089dbddca7be061a5a4977765a4d56ce/AndroidManifest.xml:27:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:25:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:28:9-32:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:30:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:29:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:33:9-41:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:36:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:37:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:34:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:38:13-40:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:39:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:43:9-46:40
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:34:9-37:40
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/c7bf9231b24ff850521bd09c367abcca/AndroidManifest.xml:34:9-37:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:45:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:44:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:47:9-51:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:49:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:50:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c3af86617ff30cf5c8945188df0aad7f/AndroidManifest.xml:48:13-87
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:30:9-34:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:32:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:31:13-78
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:36:9-39:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:38:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:37:13-77
+service#com.google.android.gms.analytics.AnalyticsJobService
+ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:40:9-44:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:42:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:43:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:44:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.0.aar/ab7f5cfaf2257042022a699138e52fe8/AndroidManifest.xml:41:13-80
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:25:9-34:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:27:13-36
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:28:13-59
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:26:13-76
+intent-filter#action:name:com.google.android.gms.appinvite.ACTION_PREVIEW+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:29:13-33:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:30:17-90
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-12.0.0.aar/4435dfa7bb5c1399e97b111d712f4d64/AndroidManifest.xml:30:25-87
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-auth-12.0.0.aar/b2ad0fbcd92e404299b68a01d504e1f2/AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.0.aar/d47dac0751ca1ee919a2a42c447b0640/AndroidManifest.xml:23:5-82
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.0.aar/30f42e5b82cac2bf98369b9fc9eb4d62/AndroidManifest.xml:23:22-79
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-maps-12.0.0.aar/5abf1d2a2eb2330099230c36e295b087/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/5e6d0537a7663b5fd14bd65411795c42/AndroidManifest.xml:24:13-79
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:31:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/48b346128898f5afed3a4e3ffdcbd474/AndroidManifest.xml:32:25-75
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:29:9-63
+permission#com.comebacksafe.comebacksafe.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:32:22-76
+uses-permission#com.comebacksafe.comebacksafe.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:32:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:35:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:38:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:36:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:39:13-43:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.comebacksafe.comebacksafe
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:39:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:40:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:40:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:42:27-58
+category#com.comebacksafe.comebacksafe
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:42:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/167aa37a6e8e9dd94254fb9a0096eef7/AndroidManifest.xml:54:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/30e9574ac6778576b9a6034220137c60/AndroidManifest.xml:9:13-77
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:31:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.0.aar/2840b2ffa9b1c0c0190bc5d21295eb4c/AndroidManifest.xml:30:13-65
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] /Users/gwendalbrossard/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/9a1a1ab7814d553f12b121c85fd04eee/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12 reason: com.google.android.gms.license has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12 reason: com.google.android.gms.license has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/gwendalbrossard/Desktop/Projet Agile/cbs/app/src/main/AndroidManifest.xml:2:1-21:12 reason: com.google.android.gms.license requested WRITE_EXTERNAL_STORAGE
