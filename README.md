@@ -21,3 +21,5 @@ Il faut ensuite penser à mettre à jour le Google Play sur l'émulateur. Il fau
 Créer un fichier "local.properties" à la racine du projet et y ajouter les infos suivantes en remplacant le chemin par le chemin où se trouve votre SDK 
 
 sdk.dir=C\:\\Users\\Fred\\AppData\\Local\\Android\\Sdk
+
+Sur mac : sdk.dir=/Users/gwendalbrossard/Library/Android/sdk
