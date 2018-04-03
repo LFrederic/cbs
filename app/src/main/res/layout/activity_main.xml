@@ -5,10 +5,11 @@
     android:layout_height="fill_parent"
     android:background="@color/mainColor">
 
+
     <Button
         android:id="@+id/mainButton"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="20"
         android:background="@android:color/transparent"
@@ -18,7 +19,7 @@
         android:src="@drawable/iconparam"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="end|right"
         android:layout_marginRight="5pt"
         android:layout_marginBottom="5pt"
         android:background="@color/mainColor"
