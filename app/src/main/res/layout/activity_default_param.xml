@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cbs.cbs.DefaultParamActivity">
+    android:orientation="vertical"
+    tools:context="com.example.cbs.cbs.DefaultParamActivity"
+    android:background="@color/mainColor">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/titreParametre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreParametre"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textDefaultNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textDefaultNumber" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.cbs.cbs.DefaultParamActivity"
+        android:background="@color/mainColor">
+
+            <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact" />
+
+        <TextView
+            android:id="@+id/defaultNumDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultNumDisplay"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/paramValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider" />
+</LinearLayout>
