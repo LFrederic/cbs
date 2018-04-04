@@ -4,8 +4,11 @@
     <string name="mainButton">JE RENTRE SAFE</string>
     <string name="title_activity_accueil">AccueilActivity</string>
 
+    <string name="faux">false</string>
+
     <string name="textDefaultNumber">Veuillez choisir un nouveau numéro de téléphone par défaut</string>
     <string name="valider">Valider</string>
     <string name="titreParametre">Paramètres</string>
     <string name="contact">Contacts</string>
+    <string name="displayDefaultPerson">Veuillez définir un contact par défaut</string>
 </resources>
