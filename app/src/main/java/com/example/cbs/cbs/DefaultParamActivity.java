@@ -29,7 +29,8 @@ public class DefaultParamActivity extends Activity {
         final SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
 
-        displayDefaultNumero.setText(prefs.getString("defaultNum", ""));
+        String defaultPerson = prefs.getString("defaultNum", "") + " " + prefs.getString("defaultName", "");
+        displayDefaultNumero.setText(defaultPerson);
 
         findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -81,7 +82,7 @@ public class DefaultParamActivity extends Activity {
             if (uri != null) {
                 Cursor cursor;
                 cursor = getContentResolver().query(uri, null, null, null, null);
-                if (!cursor.moveToFirst()) {
+                if (cursor.moveToFirst()) {
                     cursor.moveToFirst();
                     int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
                     int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
