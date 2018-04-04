@@ -19,8 +19,10 @@ import android.widget.Toast;
 public class DefaultParamActivity extends Activity {
 
     private static final int RESULT_PICK_CONTACT = 1;
-    String phoneNumber = null ;
-    String name = null;
+    //Variable globales à mettre dans les SharedPreferences
+    String phoneNumber = "";
+    String name = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,40 +30,44 @@ public class DefaultParamActivity extends Activity {
 
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-        final TextView displayDefaultNumero= findViewById(R.id.defaultNumDisplay);
+        final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
 
         displayDefaultNumero.setText(prefs.getString("defaultNum", ""));
 
-
-        findViewById(R.id.paramValidate).setOnClickListener(new View.OnClickListener( ) {
+        findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                displayDefaultNumero.setText(name+ " "+ phoneNumber);
-                SharedPreferences.Editor editor = settings.edit();
-                editor.putString("defaultNum", phoneNumber);
-                editor.putString("defaultName", name);
-                editor.commit();
-
-                Toast.makeText(DefaultParamActivity.this, "Voici le nouveau numéro par défaut : " + prefs.getString("defaultNum", "RIEN"),
-                        Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(DefaultParamActivity.this, MainActivity.class));
-                }
-                });
-
-
-        findViewById(R.id.contact).setOnClickListener(new View.OnClickListener( ) {
-            public void onClick(View v){
                 Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
-                    ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+                        ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
                 startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
+            }
+
+
+        });
+
+        findViewById(R.id.paramValidate).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                if (phoneNumber.equals("")) {
+                    String defaultPerson = name + " " + phoneNumber;
+                    displayDefaultNumero.setText(defaultPerson);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putString("defaultNum", phoneNumber);
+                    editor.putString("defaultName", name);
+                    editor.apply();
+
+                    Toast.makeText(DefaultParamActivity.this, "Voici le nouveau numéro par défaut : " + prefs.getString("defaultNum", ""),
+                            Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(DefaultParamActivity.this, MainActivity.class));
+                } else {
+                    Toast.makeText(DefaultParamActivity.this, "Veuillez choisir un contact pour changer le numéro par défaut",
+                            Toast.LENGTH_SHORT).show();
                 }
-
-
-
-    });
-
+            }
+        });
     }
 
-
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
@@ -74,15 +80,20 @@ public class DefaultParamActivity extends Activity {
         }
     }
 
-    public void contactPicked(Intent data){
-        Cursor cursor = null;
-        Uri uri = data.getData();
-        cursor = getContentResolver().query(uri, null, null, null, null);
-        cursor.moveToFirst();
+    public void contactPicked(Intent data) {
 
-        int  phoneIndex =cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
-        int  nameIndex =cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
-        phoneNumber = cursor.getString(phoneIndex);
-        name = cursor.getString(nameIndex);
+        Uri uri = data.getData();
+            if (uri != null) {
+                Cursor cursor;
+                cursor = getContentResolver().query(uri, null, null, null, null);
+                if(cursor.moveToFirst()==false) {
+                    cursor.moveToFirst();
+                    int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+                    int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
+                    phoneNumber = cursor.getString(phoneIndex);
+                    name = cursor.getString(nameIndex);
+                    cursor.close();
+                }
+            }
     }
 }

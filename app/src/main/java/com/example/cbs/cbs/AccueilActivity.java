@@ -14,11 +14,11 @@ public class AccueilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_accueil);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        EditText inputNumero= findViewById(R.id.inputNumber);
+        EditText inputNumero = findViewById(R.id.inputNumber);
 
-        if(prefs!=null){
-
-            inputNumero.setText(prefs.getString("defaultNum", "RIEN")+" "+ prefs.getString("defaultName", "RIEN"));
+        if (!prefs.getString("defaultNum", "").equals("")) {
+            String defaultPerson = prefs.getString("defaultNum", "") + " " + prefs.getString("defaultName", "");
+            inputNumero.setText(defaultPerson);
         }
     }
 }

@@ -33,22 +33,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      //  FirebaseApp.initializeApp(this);
+        //  FirebaseApp.initializeApp(this);
 
         System.out.print("MainActivity.java : Application lancée");
 
         mAuth = FirebaseAuth.getInstance();
         mDatabaseDemandeRetour = FirebaseDatabase.getInstance().getReference("DemandeRetour");
 
-        Button toAccueil= findViewById(R.id.mainButton);
+        Button toAccueil = findViewById(R.id.mainButton);
         toAccueil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AccueilActivity.class));
-                }
+            }
         });
 
 
-        ImageButton param= findViewById(R.id.paramButton);
+        ImageButton param = findViewById(R.id.paramButton);
         param.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DefaultParamActivity.class));
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 if (task.isSuccessful()) //Si on arrive à se connecter
                 {
                     System.out.println("connecté");
-                    DatabaseReference node =  mDatabaseDemandeRetour.push();
+                    DatabaseReference node = mDatabaseDemandeRetour.push();
 
                     node.child("numero").child("parent").setValue("0666666666");
                     node.child("numero").child("enfant").setValue("0666666666");
@@ -73,9 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     node.child("date").setValue("14/03/2018 18:59");
 
                     node.child("message").setValue("message");
-                }
-                else
-                {
+                } else {
                     System.out.println("MainActivity.java : Impossible de se connecter avec les informations fournies - " + task.getException());
                     Toast.makeText(MainActivity.this, "Adresse email ou mot de passe incorrect.",
                             Toast.LENGTH_SHORT).show();
