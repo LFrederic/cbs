@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Button toAccueil = findViewById(R.id.mainButton);
         toAccueil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AccueilActivity.class));
+                startActivity(new Intent(MainActivity.this, RenseignerNumeroActivity.class));
             }
         });
 

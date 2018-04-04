@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AccueilActivity" />
-        <activity android:name=".DefaultParamActivity"></activity>
+        <activity android:name=".DefaultParamActivity" />
+        <activity android:name=".RenseignerNumeroActivity"></activity>
     </application>
 
 </manifest>
