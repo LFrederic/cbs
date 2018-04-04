@@ -38,6 +38,8 @@ captures/
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/.idea/caches/
+/.idea/codeStyles/
 .DS_Store
 /build
 /captures
@@ -57,4 +59,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
-app/build/*
+
+# Fichiers de merde
+app/build/
