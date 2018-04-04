@@ -1,5 +1,6 @@
 package com.example.cbs.cbs;
 
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -12,7 +13,6 @@ public class AccueilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
-
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         EditText inputNumero = findViewById(R.id.inputNumero);
 
