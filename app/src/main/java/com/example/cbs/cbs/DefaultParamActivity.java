@@ -5,14 +5,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,9 +43,7 @@ public class DefaultParamActivity extends Activity {
 
         findViewById(R.id.paramValidate).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
-
-                if (phoneNumber.equals("")) {
+                if (!phoneNumber.equals("")) {
                     String defaultPerson = name + " " + phoneNumber;
                     displayDefaultNumero.setText(defaultPerson);
                     SharedPreferences.Editor editor = settings.edit();
@@ -86,7 +81,7 @@ public class DefaultParamActivity extends Activity {
             if (uri != null) {
                 Cursor cursor;
                 cursor = getContentResolver().query(uri, null, null, null, null);
-                if(cursor.moveToFirst()==false) {
+                if (!cursor.moveToFirst()) {
                     cursor.moveToFirst();
                     int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
                     int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
