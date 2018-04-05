@@ -9,6 +9,7 @@
     <string name="textDefaultNumber">Veuillez choisir un nouveau numéro de téléphone par défaut</string>
     <string name="valider">Valider</string>
     <string name="titreParametre">Paramètres</string>
+    <string name="titreRenseignerNumero">Personnes à prévenir</string>
     <string name="contact">Contacts</string>
     <string name="displayDefaultPerson">Veuillez définir un contact par défaut</string>
 </resources>
