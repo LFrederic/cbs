@@ -82,6 +82,9 @@ public class ChoisirAdresseRDVActivity extends FragmentActivity implements OnMap
     {
         //TODO gérer la validation de l'adresse
         Log.i("validerAdresse", "bouton appuyé");
+
+        Intent intent = new Intent(this, ChoisirHeureArriveeActivity.class);
+        startActivity(intent);
     }
 
 }

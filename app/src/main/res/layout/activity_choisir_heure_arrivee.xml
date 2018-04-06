@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choisir_heure_arrivee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChoisirHeureArriveeActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtAdresse" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtDatePicker"
+                android:gravity="center"
+                android:id="@+id/edtDatePicker"
+                android:onClick="choisirDate"
+                android:focusable="false"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/edtTimePicker"
+                android:gravity="center"
+                android:id="@+id/edtTimePicker"
+                android:onClick="choisirHeure"
+                android:focusable="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnValiderHeureArrivee"
+            android:text="@string/btnValiderHeureArrivee"
+            android:onClick="validerHeureArrivee"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

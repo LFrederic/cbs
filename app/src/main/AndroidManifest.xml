@@ -34,7 +34,8 @@
 
         <activity
             android:name=".ChoisirAdresseRDVActivity"
-            android:label="@string/title_activity_choisir_adresse_rdv"></activity>
+            android:label="@string/title_activity_choisir_adresse_rdv" />
+        <activity android:name=".ChoisirHeureArriveeActivity"></activity>
     </application>
 
 </manifest>
