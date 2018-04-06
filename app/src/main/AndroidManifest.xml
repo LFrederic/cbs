@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,13 @@
         <activity android:name=".DefaultParamActivity" />
         <activity android:name=".RenseignerNumeroActivity" />
         <activity android:name=".RenseignerAdresseActivity" />
+
+
+        <service
+            android:name=".SmsService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <receiver android:name=".SmsService" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

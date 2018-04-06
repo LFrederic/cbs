@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         System.out.print("MainActivity.java : Application lancée");
         ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.SEND_SMS},
                 REQUEST_CODE_FINE_GPS);
-        startService(new Intent(this, GPSLocalisationService.class));
 
         mAuth = FirebaseAuth.getInstance();
         mDatabaseDemandeRetour = FirebaseDatabase.getInstance().getReference("DemandeRetour");
