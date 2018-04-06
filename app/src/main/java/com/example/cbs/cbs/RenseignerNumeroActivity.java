@@ -22,8 +22,8 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
     //Variable globales à mettre dans les SharedPreferences
     String phoneNumber = "";
     String name = "";
-    List<String> names = new ArrayList<>();
-    List<String> phoneNumbers = new ArrayList<>();
+    ArrayList<String> names = new ArrayList<>();
+    ArrayList<String> phoneNumbers = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +48,14 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
             }
 
 
+        });
+
+        btnValidate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent smsIntent = new Intent(RenseignerNumeroActivity.this, SmsService.class);
+                smsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
+                startService(smsIntent);
+            }
         });
     }
 

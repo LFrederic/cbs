@@ -97,8 +97,8 @@ public class GPSLocalisationService extends Service {
 
 
             //TODO A SUPPRIMER CE SONT DES DONNEES DE TEST
-            double testLatitude = -15.625;
-            double testLongitude = 52.24587;
+            double testLatitude = -15.0;
+            double testLongitude = 52.0;
 
 
             float[] distance = new float[1];
@@ -109,6 +109,10 @@ public class GPSLocalisationService extends Service {
             //TODO TEST A MODIFIER UNE FOIS QUON AURA DE VRAIES VALEURS
             if (distance[0] < 500.0) {
                 Log.e("GPSUpdate", "Je suis bien arrivé, je suis à :" + res + "mètres de chez moi");
+                Intent intent = new Intent();
+                intent.setAction("com.example.broadcast.GPS_NOTIFICATION");
+                intent.putExtra("isArrived",true);
+                sendBroadcast(intent);
             } else {
 
                 Log.e("GPSUpdate", "Je suis pas encore arrivé, je suis à :" + res + "mètres de chez moi");
