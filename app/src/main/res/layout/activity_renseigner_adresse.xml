@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    tools:context="com.example.cbs.cbs.RenseignerAdresseActivity">
+
+
+    <TextView
+        android:id="@+id/titreRenseignerAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titreRenseignerAdresse"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDefaultAdresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textDefaultAdresse" />
+
+        <TextView
+            android:id="@+id/defaultAdresser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        tools:context=".RenseignerAdresseActivity" />
+
+    <Button
+        android:id="@+id/btnModifierAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnModifierAdrsse" />
+
+    <Button
+        android:id="@+id/paramValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider" />
+</LinearLayout>

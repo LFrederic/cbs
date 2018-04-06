@@ -14,9 +14,7 @@
         android:theme="@style/AppTheme">
         <service
             android:name=".GPSLocalisationService"
-            android:enabled="true"
-            android:exported="true" />
-
+            android:enabled="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,17 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccueilActivity" />
         <activity android:name=".DefaultParamActivity" />
         <activity android:name=".RenseignerNumeroActivity" />
+        <activity android:name=".RenseignerAdresseActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDAX7lTjLLLk1bA1uf6mZaRDfThjhMiCJA" />
+            android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />
 
-        <activity
-            android:name=".ChoisirAdresseRDVActivity"
-            android:label="@string/title_activity_choisir_adresse_rdv"></activity>
     </application>
 
 </manifest>

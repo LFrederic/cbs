@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -45,6 +45,13 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
                 Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
                         ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
                 startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
+            }
+
+
+        });
+        btnValidate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class));
             }
 
 
@@ -91,11 +98,5 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
             contactsList += "+ "+ names.get(i)+ " "+ phoneNumbers.get(i) +"\n";
         }
         numDisplay.setText(contactsList);
-
-        //Permet de lancer l'activité ChoisirAdresseRDVActivity en passant en paramètre la contactsList
-        Intent intentChoisirAdresseRDVActicity =  new Intent(this, ChoisirAdresseRDVActivity.class);
-        Log.i("contactsList", "RenseignerNumeroActivity -> contactsList : " + contactsList);
-        intentChoisirAdresseRDVActicity.putExtra("contactsList", contactsList);
-        startActivity(intentChoisirAdresseRDVActicity);
     }
 }
