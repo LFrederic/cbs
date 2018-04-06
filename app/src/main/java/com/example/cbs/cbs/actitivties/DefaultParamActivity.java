@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.actitivties;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.cbs.cbs.R;
 
 public class DefaultParamActivity extends Activity {
 

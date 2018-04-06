@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.actitivties;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.cbs.cbs.R;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
@@ -32,7 +33,6 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_renseigner_adresse);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -50,7 +50,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
                 PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
 
 
-                //POur une raison osbcure, ça ne marche pas.
+                //TODO POur une raison osbcure, ça ne marche pas.
                 double radius = 100;
                 LatLng southwest = SphericalUtil.computeOffset(BORDEAUX, radius * Math.sqrt(2.0), 225);
                 LatLng northeast = SphericalUtil.computeOffset(BORDEAUX, radius * Math.sqrt(2.0), 45);

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,26 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".GPSLocalisationService"
+            android:name=".services.GPSLocalisationService"
             android:enabled="true" />
-        <activity android:name=".MainActivity">
+        <service
+            android:name=".services.SmsService"
+            android:enabled="true" />
+
+        <activity android:name=".actitivties.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DefaultParamActivity" />
-        <activity android:name=".RenseignerNumeroActivity" />
-        <activity android:name=".RenseignerAdresseActivity" />
-
-
-        <service
-            android:name=".SmsService"
-            android:enabled="true"
-            android:exported="true"></service>
-        <receiver android:name=".SmsService" />
-
+        <activity android:name=".actitivties.DefaultParamActivity" />
+        <activity android:name=".actitivties.RenseignerNumeroActivity" />
+        <activity android:name=".actitivties.RenseignerAdresseActivity" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />

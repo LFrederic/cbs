@@ -1,9 +1,10 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.actitivties;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
@@ -12,17 +13,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.cbs.cbs.R;
+import com.example.cbs.cbs.services.SmsService;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class RenseignerNumeroActivity extends AppCompatActivity {
 
     private static final int RESULT_PICK_CONTACT = 1;
     //Variable globales à mettre dans les SharedPreferences
-    String phoneNumber = "";
-    String name = "";
     ArrayList<String> names = new ArrayList<>();
     ArrayList<String> phoneNumbers = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,14 +56,8 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
                 Intent smsIntent = new Intent(RenseignerNumeroActivity.this, SmsService.class);
                 smsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
                 startService(smsIntent);
-            }
-        });
-        btnValidate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
                 startActivity(new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class));
             }
-
-
         });
     }
 
@@ -83,6 +79,8 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
         Uri uri = data.getData();
         if (uri != null) {
             Cursor cursor;
+            String phoneNumber;
+            String name;
             cursor = getContentResolver().query(uri, null, null, null, null);
             if (cursor.moveToFirst()) {
                 cursor.moveToFirst();
@@ -98,11 +96,11 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
         }
     }
 
-    public void displayContactList(){
+    public void displayContactList() {
         TextView numDisplay = findViewById(R.id.numDisplay);
         String contactsList = "";
-        for(int i =0; i<phoneNumbers.size();i++){
-            contactsList += "+ "+ names.get(i)+ " "+ phoneNumbers.get(i) +"\n";
+        for (int i = 0; i < phoneNumbers.size(); i++) {
+            contactsList += "+ " + names.get(i) + " " + phoneNumbers.get(i) + "\n";
         }
         numDisplay.setText(contactsList);
     }
