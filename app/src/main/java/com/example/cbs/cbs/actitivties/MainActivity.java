@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.actitivties;
 
 import android.Manifest;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.cbs.cbs.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.print("MainActivity.java : Application lancée");
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.SEND_SMS},
+                        Manifest.permission.SEND_SMS, Manifest.permission.READ_PHONE_STATE},
                 REQUEST_CODE_FINE_GPS);
 
         mAuth = FirebaseAuth.getInstance();

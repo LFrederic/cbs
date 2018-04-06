@@ -1,13 +1,11 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.services;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.location.LocationManager;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Toast;
@@ -23,14 +21,30 @@ public class SmsService extends Service {
         return null;
     }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        if(intent != null){
-             phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
+    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals("com.example.broadcast.GPS_NOTIFICATION")) {
+                boolean isArrived = intent.getBooleanExtra("isArrived",false);
+                if(isArrived){
+                    //envoi sms
+                    for(int i =0; i<phoneNumbers.size() ;i++){
+                        if (phoneNumbers.get(i).startsWith("+33")) {
+                            phoneNumbers.set(i, phoneNumbers.get(i).replace("+33", "0"));
+                        }
+                        SmsManager sms = SmsManager.getDefault();
+                        phoneNumbers.set(i, phoneNumbers.get(i).replaceAll(" ", ""));
+                        sms.sendTextMessage((((SmsService)context).phoneNumbers.get(i)), null, "correspondant bien arrivé", null, null);
+                        Log.i("INFO", "SMS Envoyé à : " + phoneNumbers.get(i));
+                    }
+                    Intent stopIntent = new Intent( SmsService.this, GPSLocalisationService.class);
+                    stopService(stopIntent);
+                    stopSelf();
+                }
+            }
+
         }
-        startService(new Intent(this, GPSLocalisationService.class));
-        return START_STICKY;
-    }
+    };
 
     @Override
     public void onCreate() {
@@ -45,25 +59,15 @@ public class SmsService extends Service {
         unregisterReceiver(mReceiver);
     }
 
-    private BroadcastReceiver mReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals("com.example.broadcast.GPS_NOTIFICATION")) {
-                boolean isArrived = intent.getBooleanExtra("isArrived",false);
-                if(isArrived){
-                    //envoi sms
-                    for(int i =0; i<phoneNumbers.size() ;i++){
-                        //TODO Formater le numero +33 par 06, autrement on arrive à pas à envoyer un SMS
-                        SmsManager sms = SmsManager.getDefault();
-                        sms.sendTextMessage((((SmsService)context).phoneNumbers.get(i)), null, "correspondant bien arrivé", null, null);
-                    }
-                    Intent stopIntent = new Intent( SmsService.this, GPSLocalisationService.class);
-                    stopService(stopIntent);
-                    stopSelf();
-                }
-            }
-
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent != null) {
+            phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
         }
-    };
+
+        //TODO Pas certain que l'appel au service doit se faire à ce moment-la, et pas dans le SmsService
+        startService(new Intent(this, GPSLocalisationService.class));
+        return START_STICKY;
+    }
 
 }

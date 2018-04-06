@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.services;
 
 import android.app.Service;
 import android.content.Context;
@@ -11,9 +11,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class GPSLocalisationService extends Service {
-    private static final String TAG = "BOOMBOOMTESTGPS";
-    //TODO Il faudra peut-être revoir ces valeurs, j'en ai mis 2 au pif mais je crois que c'est très peu
-    //et que du coup dans la vraie vie ça va spam les appels services. Je vous aime
+    private static final String TAG = "GpsService";
     private static final int LOCATION_INTERVAL = 10;
     private static final float LOCATION_DISTANCE = 1f;
     LocationListener[] mLocationListeners = new LocationListener[]{
@@ -68,7 +66,7 @@ public class GPSLocalisationService extends Service {
                 try {
                     mLocationManager.removeUpdates(mLocationListeners[i]);
                 } catch (Exception ex) {
-                    Log.i(TAG, "fail to remove location listners, ignore", ex);
+                    Log.i(TAG, "fail to remove location listeners, ignore", ex);
                 }
             }
         }
