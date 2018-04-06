@@ -10,6 +10,7 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.telephony.SmsManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,7 @@ public class SmsService extends Service {
 
     @Override
     public void onDestroy() {
+        Toast.makeText(SmsService.this, "Arrêt du service SMSService", Toast.LENGTH_SHORT).show();
         unregisterReceiver(mReceiver);
     }
 
@@ -51,6 +53,7 @@ public class SmsService extends Service {
                 if(isArrived){
                     //envoi sms
                     for(int i =0; i<phoneNumbers.size() ;i++){
+                        //TODO Formater le numero +33 par 06, autrement on arrive à pas à envoyer un SMS
                         SmsManager sms = SmsManager.getDefault();
                         sms.sendTextMessage((((SmsService)context).phoneNumbers.get(i)), null, "correspondant bien arrivé", null, null);
                     }

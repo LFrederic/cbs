@@ -29,13 +29,13 @@
         <activity android:name=".DefaultParamActivity" />
         <activity android:name=".RenseignerNumeroActivity" />
 
-<<<<<<< HEAD
+
         <service
             android:name=".SmsService"
             android:enabled="true"
             android:exported="true"></service>
         <receiver android:name=".SmsService" />
-=======
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDAX7lTjLLLk1bA1uf6mZaRDfThjhMiCJA" />
@@ -43,7 +43,7 @@
         <activity
             android:name=".ChoisirAdresseRDVActivity"
             android:label="@string/title_activity_choisir_adresse_rdv"></activity>
->>>>>>> 96e48f57d26a6daae2197d15197a5a88f522c1e4
+
     </application>
 
 </manifest>
