@@ -15,13 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".GPSLocalisationService"
+            android:name=".services.GPSLocalisationService"
             android:enabled="true" />
         <service
-            android:name=".SmsService"
+            android:name=".services.SmsService"
             android:enabled="true" />
 
-        <receiver android:name=".SMSServiceBroadCastReceiver">
+        <receiver android:name=".broadcastreceiver.SMSServiceBroadCastReceiver">
             <intent-filter>
                 <action android:name="com.example.broadcast.GPS_NOTIFICATION" />
             </intent-filter>
@@ -35,8 +35,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".actitivties.DefaultParamActivity" />
-        <activity android:name=".RenseignerNumeroActivity" />
-        <activity android:name=".RenseignerAdresseActivity" />
+        <activity android:name=".actitivties.RenseignerNumeroActivity" />
+        <activity android:name=".actitivties.RenseignerAdresseActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

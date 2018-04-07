@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.cbs.cbs.R;
-import com.example.cbs.cbs.RenseignerNumeroActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

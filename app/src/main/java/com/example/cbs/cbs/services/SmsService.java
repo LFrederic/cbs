@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.services;
 
 import android.app.Service;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.content.IntentFilter;
 import android.os.IBinder;
 import android.telephony.SmsManager;
 import android.util.Log;
+
+import com.example.cbs.cbs.broadcastreceiver.SMSServiceBroadCastReceiver;
 
 import java.util.ArrayList;
 import java.util.List;

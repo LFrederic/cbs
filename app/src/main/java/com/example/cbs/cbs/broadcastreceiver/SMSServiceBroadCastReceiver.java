@@ -1,10 +1,12 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.broadcastreceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.telephony.SmsManager;
 import android.util.Log;
+
+import com.example.cbs.cbs.services.SmsService;
 
 import java.util.ArrayList;
 import java.util.List;
