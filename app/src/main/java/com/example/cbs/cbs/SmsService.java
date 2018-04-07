@@ -25,7 +25,7 @@ public class SmsService extends Service {
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
-        mReceiver = new SMSServiceBroadCastReceiver(this) {
+        mReceiver = new SMSServiceBroadCastReceiver(phoneNumbers) {
         };
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
@@ -42,6 +42,7 @@ public class SmsService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (intent != null) {
             phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
+            mReceiver.setPhoneNumbers(phoneNumbers);
         }
         startService(new Intent(this, GPSLocalisationService.class));
         return START_STICKY;
