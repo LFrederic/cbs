@@ -63,3 +63,5 @@ fastlane/readme.md
 
 # Fichiers de merde
 app/build
+app/src/main/res/values/google_maps_api.xml
+app/src/debug/

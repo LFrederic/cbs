@@ -33,7 +33,7 @@
         <activity android:name=".actitivties.RenseignerAdresseActivity" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />
+            android:value="AIzaSyB9tV8FpNHzWQBpsG8-Kl0nStRfv-qtyMw" />
 
     </application>
 

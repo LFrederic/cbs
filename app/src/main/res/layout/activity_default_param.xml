@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.cbs.cbs.actitivties.DefaultParamActivity"
-    android:background="@color/mainColor">
+    android:background="@drawable/accueil">
 
     <TextView
         android:id="@+id/titreParametre"

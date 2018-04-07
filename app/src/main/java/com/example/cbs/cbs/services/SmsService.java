@@ -48,6 +48,7 @@ public class SmsService extends Service {
 
     @Override
     public void onCreate() {
+        Log.e("TAG", "onCreateSMS");
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
         registerReceiver(mReceiver, mIntentFilter);
@@ -55,7 +56,7 @@ public class SmsService extends Service {
 
     @Override
     public void onDestroy() {
-        Toast.makeText(SmsService.this, "Arrêt du service SMSService", Toast.LENGTH_SHORT).show();
+        Log.e("TAG", "onDestroySMS");
         unregisterReceiver(mReceiver);
     }
 

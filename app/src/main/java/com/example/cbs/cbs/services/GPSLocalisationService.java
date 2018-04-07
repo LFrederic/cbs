@@ -34,7 +34,7 @@ public class GPSLocalisationService extends Service {
 
     @Override
     public void onCreate() {
-        Log.e(TAG, "onCreate");
+        Log.e(TAG, "onCreateGPS");
         initializeLocationManager();
         try {
             mLocationManager.requestLocationUpdates(
@@ -59,7 +59,7 @@ public class GPSLocalisationService extends Service {
     @Override
     public void onDestroy() {
         Toast.makeText(GPSLocalisationService.this, "Arrêt du service GPSLocalisationService", Toast.LENGTH_SHORT).show();
-        Log.e(TAG, "onDestroy");
+        Log.e(TAG, "onDestroyGPS");
         super.onDestroy();
         if (mLocationManager != null) {
             for (int i = 0; i < mLocationListeners.length; i++) {
