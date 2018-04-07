@@ -1,4 +1,4 @@
-package com.example.cbs.cbs.services;
+package com.example.cbs.cbs;
 
 import android.app.Service;
 import android.content.Context;

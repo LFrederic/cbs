@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/accueil"
     android:orientation="vertical"
-    tools:context="com.example.cbs.cbs.actitivties.RenseignerAdresseActivity">
+    tools:context="com.example.cbs.cbs.RenseignerAdresseActivity">
 
 
     <TextView
@@ -42,7 +42,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="90pt"
-        tools:context=".actitivties.RenseignerAdresseActivity" />
+        tools:context=".RenseignerAdresseActivity" />
 
     <Button
         android:id="@+id/btnModifierAdresse"
