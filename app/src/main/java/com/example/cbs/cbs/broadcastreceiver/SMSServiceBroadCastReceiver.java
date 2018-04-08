@@ -18,6 +18,9 @@ public class SMSServiceBroadCastReceiver extends BroadcastReceiver {
 
     }
 
+    public SMSServiceBroadCastReceiver() {
+    }
+
     public void setPhoneNumbers(List<String> phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
     }
