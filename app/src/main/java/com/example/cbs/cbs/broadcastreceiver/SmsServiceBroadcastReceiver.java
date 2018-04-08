@@ -10,15 +10,15 @@ import com.example.cbs.cbs.services.SmsService;
 
 import java.util.List;
 
-public class SMSServiceBroadCastReceiver extends BroadcastReceiver {
+public class SmsServiceBroadcastReceiver extends BroadcastReceiver {
     private List<String> phoneNumbers;
 
-    public SMSServiceBroadCastReceiver(List<String> phones) {
+    public SmsServiceBroadcastReceiver(List<String> phones) {
         phoneNumbers = phones;
 
     }
 
-    public SMSServiceBroadCastReceiver() {
+    public SmsServiceBroadcastReceiver() {
     }
 
     public void setPhoneNumbers(List<String> phoneNumbers) {

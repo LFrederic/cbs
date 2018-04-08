@@ -7,7 +7,7 @@ import android.os.IBinder;
 import android.telephony.SmsManager;
 import android.util.Log;
 
-import com.example.cbs.cbs.broadcastreceiver.SMSServiceBroadCastReceiver;
+import com.example.cbs.cbs.broadcastreceiver.SmsServiceBroadcastReceiver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,13 +21,13 @@ public class SmsService extends Service {
         return null;
     }
 
-    private SMSServiceBroadCastReceiver mReceiver;
+    private SmsServiceBroadcastReceiver mReceiver;
 
 
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
-        mReceiver = new SMSServiceBroadCastReceiver(phoneNumbers) {
+        mReceiver = new SmsServiceBroadcastReceiver(phoneNumbers) {
         };
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
