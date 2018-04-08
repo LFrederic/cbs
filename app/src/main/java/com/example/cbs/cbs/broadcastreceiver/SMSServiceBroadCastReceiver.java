@@ -8,15 +8,10 @@ import android.util.Log;
 
 import com.example.cbs.cbs.services.SmsService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SMSServiceBroadCastReceiver extends BroadcastReceiver {
     private List<String> phoneNumbers;
-
-    public SMSServiceBroadCastReceiver() {
-        phoneNumbers = new ArrayList<>();
-    }
 
     public SMSServiceBroadCastReceiver(List<String> phones) {
         phoneNumbers = phones;
