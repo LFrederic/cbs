@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/accueil"
     >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/mainButton"
+        <ImageButton
+            android:id="@+id/mainButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/je_rentre_safe" />
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_weight="20"
-        android:background="@android:color/transparent"
-        android:text="@string/mainButton" />
-    <ImageButton
-        android:id="@+id/paramButton"
-        android:src="@drawable/iconparam"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="end|right"
-        android:layout_marginRight="5pt"
-        android:layout_marginBottom="5pt"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"/>
+        android:gravity="right|bottom"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/paramButton"
+            android:src="@drawable/iconparam"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="right"
+            android:layout_marginRight="5pt"
+            android:layout_marginBottom="5pt"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
 </LinearLayout>

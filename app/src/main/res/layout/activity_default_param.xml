@@ -28,6 +28,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:context="com.example.cbs.cbs.actitivties.ParametreDefautActivity">
+        android:background="@android:color/transparent">
+
 
         <Button
             android:id="@+id/contact"
