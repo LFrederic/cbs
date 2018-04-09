@@ -21,6 +21,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
+
 public class RenseignerAdresseActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private final Integer PLACE_PICKER_REQUEST = 1;
@@ -28,6 +30,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     private CharSequence actualPlace = "";
     private LatLng actualLatLng;
     private float zoomLevel = 16.0f; //This goes up to 21
+    private ArrayList<String> phoneNumbers;
 
 
 
@@ -53,8 +56,9 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         validate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(RenseignerAdresseActivity.this, RenseignerHeureArriveeActivity.class);
+                intent.putStringArrayListExtra("phoneNumbers",phoneNumbers);
+                intent.putExtra("adresse",actualLatLng);
                 startActivity(intent);
-
             }
         });
 
@@ -102,6 +106,8 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     }
 
     private void initActualParams() {
+        Intent intent = getIntent();
+        phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getString("defaultAdresse", "").equals("")) {
             String defaultAdr = prefs.getString("defaultAdresse", "");

@@ -52,7 +52,9 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
 
         btnValidate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class));
+                Intent i = new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class);
+                i.putStringArrayListExtra("phoneNumbers" ,phoneNumbers);
+                startActivity(i);
             }
         });
     }
