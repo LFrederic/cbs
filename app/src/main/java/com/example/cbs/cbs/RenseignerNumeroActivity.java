@@ -93,9 +93,9 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
         numDisplay.setText(contactsList);
 
         //Permet de lancer l'activité ChoisirAdresseRDVActivity en passant en paramètre la contactsList
-        /*Intent intentChoisirAdresseRDVActicity =  new Intent(this, ChoisirAdresseRDVActivity.class);
+        Intent intentChoisirAdresseRDVActicity = new Intent(this, ChoisirAdresseRDVActivity.class);
         Log.i("contactsList", "RenseignerNumeroActivity -> contactsList : " + contactsList);
         intentChoisirAdresseRDVActicity.putExtra("contactsList", contactsList);
-        startActivity(intentChoisirAdresseRDVActicity);*/
+        startActivity(intentChoisirAdresseRDVActicity);
     }
 }
