@@ -41,10 +41,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />
-=======
-            android:value="AIzaSyDV0xXimSB_fb4lY0ZKD_-7UDejgvi1LXs" />
->>>>>>> Modification affichage
-
     </application>
 
 </manifest>
