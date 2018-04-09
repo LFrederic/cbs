@@ -57,18 +57,6 @@
         android:layout_height="90pt"
         tools:context=".actitivties.RenseignerAdresseActivity" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/defaultParam_txtview_defaultAddress"/>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/defaultParam_edttxt_defaultAddress"
-        android:hint="@string/defaultParam_edttxt_defaultAddress"/>
-
     <Button
         android:id="@+id/btnModifierAdresse"
         android:layout_width="match_parent"
