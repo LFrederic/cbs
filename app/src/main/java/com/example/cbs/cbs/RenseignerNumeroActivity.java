@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -93,9 +93,9 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
         numDisplay.setText(contactsList);
 
         //Permet de lancer l'activité ChoisirAdresseRDVActivity en passant en paramètre la contactsList
-        Intent intentChoisirAdresseRDVActicity =  new Intent(this, ChoisirAdresseRDVActivity.class);
+        /*Intent intentChoisirAdresseRDVActicity =  new Intent(this, ChoisirAdresseRDVActivity.class);
         Log.i("contactsList", "RenseignerNumeroActivity -> contactsList : " + contactsList);
         intentChoisirAdresseRDVActicity.putExtra("contactsList", contactsList);
-        startActivity(intentChoisirAdresseRDVActicity);
+        startActivity(intentChoisirAdresseRDVActicity);*/
     }
 }

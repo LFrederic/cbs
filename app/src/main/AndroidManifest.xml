@@ -32,9 +32,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDAX7lTjLLLk1bA1uf6mZaRDfThjhMiCJA" />
 
-        <activity
-            android:name=".ChoisirAdresseRDVActivity"
-            android:label="@string/title_activity_choisir_adresse_rdv" />
         <activity android:name=".ChoisirHeureArriveeActivity"></activity>
     </application>
 
