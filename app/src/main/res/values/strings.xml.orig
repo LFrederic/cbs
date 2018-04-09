@@ -13,9 +13,14 @@
     <string name="displayDefaultPerson">Veuillez définir un contact par défaut</string>
     <string name="titreRenseignerAdresse">Adresse</string>
     <string name="textDefaultAdresse">Adresse actuelle : </string>
+<<<<<<< HEAD
     <string name="defaultAddrDisplay">Adresse actuelle par défaut : </string>
     <string name="btnModifierAdresse">Modifier l\'adresse</string>
+=======
+
     <string name="defaultParam_txtview_defaultAddress">Adresse par défaut :</string>
     <string name="defaultParam_edttxt_defaultAddress">55 Rue du Faubourg Saint-Honoré, 75008 Paris</string>
+
     <string name="btnModifierAdrsse">Modifier l\'adresse</string>
+>>>>>>> 381eec9c4a73dddd2f403fb5b864e68f02ac20a4
 </resources>

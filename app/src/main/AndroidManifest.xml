@@ -21,7 +21,7 @@
             android:name=".services.SmsService"
             android:enabled="true" />
 
-        <receiver android:name=".broadcastreceiver.SmsServiceBroadcastReceiver">
+        <receiver android:name=".SmsServiceBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.example.broadcast.GPS_NOTIFICATION" />
             </intent-filter>
@@ -34,7 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".actitivties.DefaultParamActivity" />
+        <activity android:name=".actitivties.ParametreDefautActivity" />
         <activity android:name=".actitivties.RenseignerNumeroActivity" />
         <activity android:name=".actitivties.RenseignerAdresseActivity" />
 
