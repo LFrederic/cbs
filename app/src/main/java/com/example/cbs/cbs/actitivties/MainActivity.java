@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabaseDemandeRetour = FirebaseDatabase.getInstance().getReference("DemandeRetour");
 
-        Button toAccueil = findViewById(R.id.mainButton);
+        ImageButton toAccueil = findViewById(R.id.mainButton);
         toAccueil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RenseignerNumeroActivity.class));
