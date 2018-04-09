@@ -27,17 +27,17 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".actitivties.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".actitivties.ParametreDefautActivity" />
-        <activity android:name=".actitivties.RenseignerNumeroActivity" />
-        <activity android:name=".actitivties.RenseignerAdresseActivity" />
-        <activity android:name=".actitivties.RenseignerHeureArriveeActivity" />
+        <activity android:name=".activities.ParametreDefautActivity" />
+        <activity android:name=".activities.RenseignerNumeroActivity" />
+        <activity android:name=".activities.RenseignerAdresseActivity" />
+        <activity android:name=".activities.RenseignerHeureArriveeActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

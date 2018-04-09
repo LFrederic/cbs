@@ -1,4 +1,4 @@
-package com.example.cbs.cbs.actitivties;
+package com.example.cbs.cbs.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
