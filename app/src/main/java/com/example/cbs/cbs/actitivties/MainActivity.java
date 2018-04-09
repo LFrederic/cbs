@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton param = findViewById(R.id.paramButton);
         param.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DefaultParamActivity.class));
+                startActivity(new Intent(MainActivity.this, ParametreDefautActivity.class));
             }
         });
 
