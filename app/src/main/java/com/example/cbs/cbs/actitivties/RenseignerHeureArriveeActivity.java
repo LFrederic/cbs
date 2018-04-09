@@ -3,8 +3,8 @@ package com.example.cbs.cbs.actitivties;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
@@ -13,7 +13,9 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.cbs.cbs.R;
+import com.example.cbs.cbs.services.SmsService;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class RenseignerHeureArriveeActivity extends AppCompatActivity {
@@ -22,15 +24,17 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
     EditText edtDatePicker;
     EditText edtTimePicker;
     String strAdresse;
+    private ArrayList<String> phoneNumbers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choisir_heure_arrivee);
 
-        //Permet de récupérer l'adresse qui est passée par l'activité précédente : ChoisirAdresseRDVActivity
+        //Permet de récupérer l'adresse qui est passée par l'activité précédente
         Intent intent = getIntent();
         strAdresse = intent.getStringExtra("adresse");
+        phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
     }
 
     public void choisirDate(View view)
@@ -59,7 +63,7 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
     public void choisirHeure(View view)
     {
-        edtTimePicker = (EditText) findViewById(R.id.edtTimePicker);
+        edtTimePicker = findViewById(R.id.edtTimePicker);
         Calendar mcurrentTime = Calendar.getInstance();
         int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
         int minute = mcurrentTime.get(Calendar.MINUTE);
@@ -76,14 +80,18 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
     public void validerHeureArrivee(View view)
     {
-        EditText edtDatePicker = (EditText) findViewById(R.id.edtDatePicker);
-        EditText edtTimePicker = (EditText) findViewById(R.id.edtTimePicker);
+        EditText edtDatePicker = findViewById(R.id.edtDatePicker);
+        EditText edtTimePicker = findViewById(R.id.edtTimePicker);
 
          if (edtDatePicker.getText().toString().equals("") || edtTimePicker.getText().toString().equals("")) {Toast.makeText(RenseignerHeureArriveeActivity.this, "Veuillez choisir une date pour le rendez-vous", Toast.LENGTH_LONG).show(); return;}
 
         String dateString = edtDatePicker.getText().toString() + " " + edtTimePicker.getText().toString();
-        Log.i("dateString", "ChoisirHeureArrveeActivity -> dateString : " + dateString);
+        Log.i("dateString", "RenseignerHeureArriveeActivity -> dateString : " + dateString);
 
+
+        Intent smsIntent = new Intent(RenseignerHeureArriveeActivity.this, SmsService.class);
+        smsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
+        startService(smsIntent);
     }
 
 }

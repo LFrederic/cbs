@@ -57,11 +57,10 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
             public void onClick(View v) {
                 Intent intent = new Intent(RenseignerAdresseActivity.this, RenseignerHeureArriveeActivity.class);
                 intent.putStringArrayListExtra("phoneNumbers",phoneNumbers);
-                intent.putExtra("adresse",actualLatLng);
+                intent.putExtra("adresse",actualLatLng.toString());
                 startActivity(intent);
             }
         });
-
     }
 
     @Override
