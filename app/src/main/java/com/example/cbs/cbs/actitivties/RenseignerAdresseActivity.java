@@ -29,6 +29,8 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     private LatLng actualLatLng;
     private float zoomLevel = 16.0f; //This goes up to 21
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
