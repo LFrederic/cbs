@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -31,7 +32,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDAX7lTjLLLk1bA1uf6mZaRDfThjhMiCJA" />
 
-        <activity android:name=".ChoisirHeureArriveeActivity"></activity>
+        <activity
+            android:name=".ChoisirAdresseRDVActivity"
+            android:label="@string/title_activity_choisir_adresse_rdv"></activity>
     </application>
 
 </manifest>

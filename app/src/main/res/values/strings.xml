@@ -16,11 +16,4 @@
 
 
     <string name="ChoisirAdresseRDVAcitivity_txtViewHeader">Choisir l\'adresse de destination en cliquant sur un point sur la carte.</string>
-
-
-    <string name="edtDatePicker">Choisir une date</string>
-    <string name="edtTimePicker">Choisir une heure</string>
-    <string name="btnValiderHeureArrivee">Valider l\'heure d\'arrivée</string>
-    <string name="txtAdresse">Adresse à définir</string>
-
 </resources>
