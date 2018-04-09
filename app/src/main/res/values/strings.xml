@@ -16,4 +16,8 @@
     <string name="defaultAddrDisplay">Adresse actuelle par défaut : </string>
     <string name="btnModifierAdresse">Modifier l\'adresse</string>
     <string name="btnModifierAdrsse">Modifier l\'adresse</string>
+    <string name="edtDatePicker">Choisir une date</string>
+    <string name="edtTimePicker">Choisir une heure</string>
+    <string name="btnValiderHeureArrivee">Valider l\'heure d\'arrivée</string>
+    <string name="txtAdresse">Adresse à définir</string>
 </resources>

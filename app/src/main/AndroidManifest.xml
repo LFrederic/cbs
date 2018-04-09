@@ -37,6 +37,7 @@
         <activity android:name=".actitivties.ParametreDefautActivity" />
         <activity android:name=".actitivties.RenseignerNumeroActivity" />
         <activity android:name=".actitivties.RenseignerAdresseActivity" />
+        <activity android:name=".actitivties.ChoisirHeureArriveeActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

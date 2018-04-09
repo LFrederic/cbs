@@ -4,7 +4,7 @@
     android:id="@+id/activity_choisir_heure_arrivee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChoisirHeureArriveeActivity">
+    tools:context=".actitivties.ChoisirHeureArriveeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

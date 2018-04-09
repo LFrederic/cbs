@@ -48,6 +48,15 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
                 launchPlacePicker();
             }
         });
+
+        Button validate = findViewById(R.id.btnValidate);
+        validate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(RenseignerAdresseActivity.this, ChoisirHeureArriveeActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

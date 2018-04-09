@@ -1,4 +1,4 @@
-package com.example.cbs.cbs;
+package com.example.cbs.cbs.actitivties;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -11,6 +11,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.example.cbs.cbs.R;
 
 import java.util.Calendar;
 
