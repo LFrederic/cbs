@@ -8,6 +8,7 @@
     tools:context="com.example.cbs.cbs.actitivties.DefaultParamActivity"
     android:background="@drawable/accueil">
 
+
     <TextView
         android:id="@+id/titreParametre"
         android:textSize="30sp"
@@ -29,7 +30,7 @@
         tools:context="com.example.cbs.cbs.actitivties.DefaultParamActivity"
         android:background="@color/mainColor">
 
-            <Button
+        <Button
             android:id="@+id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,9 +42,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"/>
 
-
     </LinearLayout>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultParam_txtview_defaultAddress"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/defaultParam_edttxt_defaultAddress"
+        android:hint="@string/defaultParam_edttxt_defaultAddress"/>
 
     <Button
         android:id="@+id/paramValidate"

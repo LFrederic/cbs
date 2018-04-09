@@ -14,5 +14,8 @@
     <string name="titreRenseignerAdresse">Adresse</string>
     <string name="textDefaultAdresse">Adresse actuelle : </string>
 
+    <string name="defaultParam_txtview_defaultAddress">Adresse par défaut :</string>
+    <string name="defaultParam_edttxt_defaultAddress">55 Rue du Faubourg Saint-Honoré, 75008 Paris</string>
+
     <string name="btnModifierAdrsse">Modifier l\'adresse</string>
 </resources>

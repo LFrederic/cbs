@@ -1,7 +1,9 @@
 package com.example.cbs.cbs.actitivties;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +31,8 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     private LatLng actualLatLng;
     private float zoomLevel = 16.0f; //This goes up to 21
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +41,13 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        //TODO set le actualLatLng par l'adresse par défaut quand on l'aura si elle existe, sinon on met BordeauuuuuuxZooGangCity
+        //TODO set le actualLatLng par l'adresse par défaut quand on l'aura si elle existe, sinon on met BordeauuuuuuxZooGangCity - Pour l'instant on récupère l'adresse en texte dans les sharedpreferences
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        String defaultAddress = prefs.getString("defaultAddress", "");
+
         actualLatLng = new LatLng(44.836151, -0.580816);
         TextView defaultAddr = findViewById(R.id.defaultAdresser);
-        defaultAddr.setText(actualPlace);
+        defaultAddr.setText(defaultAddress);
 
         Button btnModifierAdresse = findViewById(R.id.btnModifierAdresse);
         btnModifierAdresse.setOnClickListener(new View.OnClickListener() {

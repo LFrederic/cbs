@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,9 +31,12 @@ public class DefaultParamActivity extends Activity {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
+        final EditText displayDefaultAddress = findViewById(R.id.defaultParam_edttxt_defaultAddress);
 
         String defaultPerson = prefs.getString("defaultNum", "") + " " + prefs.getString("defaultName", "");
+        String defaultAddress = prefs.getString("defaultAddress", "");
         displayDefaultNumero.setText(defaultPerson);
+        displayDefaultAddress.setText(defaultAddress);
 
         findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -49,9 +53,11 @@ public class DefaultParamActivity extends Activity {
                 if (!phoneNumber.equals("")) {
                     String defaultPerson = name + " " + phoneNumber;
                     displayDefaultNumero.setText(defaultPerson);
+
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putString("defaultNum", phoneNumber);
                     editor.putString("defaultName", name);
+                    editor.putString("defaultAddress", displayDefaultAddress.getText().toString());
                     editor.apply();
 
                     Toast.makeText(DefaultParamActivity.this, "Voici le nouveau numéro par défaut : " + prefs.getString("defaultNum", ""),
