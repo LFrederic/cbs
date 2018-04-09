@@ -49,11 +49,12 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
             }
         });
 
-        Button validate = findViewById(R.id.btnValidate);
+        Button validate = findViewById(R.id.validate);
         validate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(RenseignerAdresseActivity.this, ChoisirHeureArriveeActivity.class);
+                Intent intent = new Intent(RenseignerAdresseActivity.this, RenseignerHeureArriveeActivity.class);
                 startActivity(intent);
+
             }
         });
 

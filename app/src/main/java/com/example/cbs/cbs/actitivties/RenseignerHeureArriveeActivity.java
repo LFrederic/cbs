@@ -16,7 +16,7 @@ import com.example.cbs.cbs.R;
 
 import java.util.Calendar;
 
-public class ChoisirHeureArriveeActivity extends AppCompatActivity {
+public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
 
     EditText edtDatePicker;
@@ -42,7 +42,7 @@ public class ChoisirHeureArriveeActivity extends AppCompatActivity {
         int mMonth = c.get(Calendar.MONTH); // current month
         int mDay = c.get(Calendar.DAY_OF_MONTH); // current day
         // On ouvre le calendrier
-        DatePickerDialog datePickerDialog = new DatePickerDialog(ChoisirHeureArriveeActivity.this,
+        DatePickerDialog datePickerDialog = new DatePickerDialog(RenseignerHeureArriveeActivity.this,
                 new DatePickerDialog.OnDateSetListener() {
 
                     @Override
@@ -64,7 +64,7 @@ public class ChoisirHeureArriveeActivity extends AppCompatActivity {
         int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
         int minute = mcurrentTime.get(Calendar.MINUTE);
         TimePickerDialog mTimePicker;
-        mTimePicker = new TimePickerDialog(ChoisirHeureArriveeActivity.this, new TimePickerDialog.OnTimeSetListener() {
+        mTimePicker = new TimePickerDialog(RenseignerHeureArriveeActivity.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
                 edtTimePicker.setText( selectedHour + ":" + selectedMinute);
@@ -79,7 +79,7 @@ public class ChoisirHeureArriveeActivity extends AppCompatActivity {
         EditText edtDatePicker = (EditText) findViewById(R.id.edtDatePicker);
         EditText edtTimePicker = (EditText) findViewById(R.id.edtTimePicker);
 
-         if (edtDatePicker.getText().toString().equals("") || edtTimePicker.getText().toString().equals("")) {Toast.makeText(ChoisirHeureArriveeActivity.this, "Veuillez choisir une date pour le rendez-vous", Toast.LENGTH_LONG).show(); return;}
+         if (edtDatePicker.getText().toString().equals("") || edtTimePicker.getText().toString().equals("")) {Toast.makeText(RenseignerHeureArriveeActivity.this, "Veuillez choisir une date pour le rendez-vous", Toast.LENGTH_LONG).show(); return;}
 
         String dateString = edtDatePicker.getText().toString() + " " + edtTimePicker.getText().toString();
         Log.i("dateString", "ChoisirHeureArrveeActivity -> dateString : " + dateString);

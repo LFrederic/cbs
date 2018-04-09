@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.cbs.cbs.R;
-import com.example.cbs.cbs.services.SmsService;
 
 import java.util.ArrayList;
 
@@ -53,9 +52,6 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
 
         btnValidate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent smsIntent = new Intent(RenseignerNumeroActivity.this, SmsService.class);
-                smsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
-                startService(smsIntent);
                 startActivity(new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class));
             }
         });
