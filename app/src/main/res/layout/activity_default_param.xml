@@ -5,9 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity"
-    android:background="@drawable/accueil">
+    android:background="@drawable/accueil"
+    android:padding="15dp">>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_background_group"
+        android:padding="20dp">
 
     <TextView
         android:id="@+id/titreParametre"
@@ -62,15 +71,19 @@
     <Button
         android:id="@+id/btnModifierAdresse"
         android:background="@drawable/custom_button_border"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnModifierAdresse" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btnModifierAdresse"
+        />
     <Button
         android:id="@+id/paramValidate"
         android:background="@drawable/custom_button_border"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/valider" />
+
+    </LinearLayout>
+
 </LinearLayout>

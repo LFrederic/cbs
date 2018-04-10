@@ -6,10 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity"
-    android:background="@drawable/accueil">
+    android:background="@drawable/accueil"
+    android:padding="15dp">>
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_background_group"
+        android:padding="20dp">
+
+
+        <TextView
         android:id="@+id/titreRenseignerNumero"
         android:textSize="30sp"
         android:layout_width="match_parent"
@@ -17,18 +28,18 @@
         android:text="@string/titreRenseignerNumero"
         android:gravity="center"/>
 
-    <Button
+        <Button
         android:id="@+id/btnContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contact" />
 
-    <TextView
+        <TextView
         android:id="@+id/numDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <android.support.constraint.ConstraintLayout
+        <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -42,4 +53,5 @@
             app:layout_constraintBottom_toBottomOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
+    </LinearLayout>
 </LinearLayout>
