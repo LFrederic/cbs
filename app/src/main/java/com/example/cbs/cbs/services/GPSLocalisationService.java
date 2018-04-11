@@ -5,10 +5,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+import java.util.List;
+import java.util.Locale;
 
 public class GPSLocalisationService extends Service {
     private static final String TAG = "GpsService";
@@ -19,6 +27,8 @@ public class GPSLocalisationService extends Service {
             new LocationListener(LocationManager.NETWORK_PROVIDER)
     };
     private LocationManager mLocationManager = null;
+    private double testLatitude = 0;
+    private double testLongitude = 0;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -29,6 +39,11 @@ public class GPSLocalisationService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.e(TAG, "onStartCommand");
         super.onStartCommand(intent, flags, startId);
+        String adresse = intent.getStringExtra("adresse");
+        String sub = adresse.substring(10, adresse.length() - 1);
+        String[] latlong = sub.split(",");
+        testLatitude = Double.parseDouble(latlong[0]);
+        testLongitude = Double.parseDouble(latlong[1]);
         return START_STICKY;
     }
 
@@ -94,11 +109,6 @@ public class GPSLocalisationService extends Service {
             mLastLocation.set(location);
             double latitude = location.getLatitude();
             double longitude = location.getLongitude();
-
-            //TODO A SUPPRIMER CE SONT DES DONNEES DE TEST
-            double testLatitude = 44.807726;
-            double testLongitude = -0.597077;
-            //Coordonnées Labri : 44.807726, -0.597077
 
             float[] distance = new float[1];
             Location.distanceBetween(latitude, longitude, testLatitude, testLongitude, distance);

@@ -12,7 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmsService extends Service {
-    public List<String> phoneNumbers = new ArrayList<>();
+    private List<String> phoneNumbers = new ArrayList<>();
+    private String strAdresse;
+    private int heure;
+    private int minutes;
+    private int jour;
+    private int mois;
+    private int annee;
     private IntentFilter mIntentFilter;
 
     @Override
@@ -26,7 +32,7 @@ public class SmsService extends Service {
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
-        mReceiver = new SmsServiceBroadcastReceiver(phoneNumbers) {
+        mReceiver = new SmsServiceBroadcastReceiver(phoneNumbers, minutes, heure, jour, mois, annee) {
         };
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
@@ -43,9 +49,17 @@ public class SmsService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (intent != null) {
             phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
+            strAdresse = intent.getStringExtra("strAdresse");
+            heure = intent.getIntExtra("heure", 0);
+            minutes = intent.getIntExtra("minutes", 0);
+            jour = intent.getIntExtra("jour", 0);
+            mois = intent.getIntExtra("mois", 0);
+            annee = intent.getIntExtra("annee", 0);
             mReceiver.setPhoneNumbers(phoneNumbers);
         }
-        startService(new Intent(this, GPSLocalisationService.class));
+        Intent gpsIntent = new Intent(this, GPSLocalisationService.class);
+        gpsIntent.putExtra("adresse", strAdresse);
+        startService(gpsIntent);
         return START_STICKY;
     }
 }

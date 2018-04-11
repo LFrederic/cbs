@@ -24,6 +24,11 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
     EditText edtDatePicker;
     EditText edtTimePicker;
     String strAdresse;
+    int heure;
+    int minutes;
+    int jour;
+    int mois;
+    int annee;
     private ArrayList<String> phoneNumbers;
 
     @Override
@@ -55,7 +60,9 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
                         // On ajoute la date à l'edittext
                         edtDatePicker.setText(dayOfMonth + "-"
                                 + (monthOfYear + 1) + "-" + year);
-
+                        jour = dayOfMonth;
+                        mois = monthOfYear;
+                        annee = year;
                     }
                 }, mYear, mMonth, mDay);
         datePickerDialog.show();
@@ -72,6 +79,8 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
             @Override
             public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
                 edtTimePicker.setText( selectedHour + ":" + selectedMinute);
+                heure = selectedHour;
+                minutes = selectedMinute;
             }
         }, hour, minute, true);//Yes 24 hour time
         mTimePicker.setTitle("Choisir l'heure");
@@ -91,6 +100,12 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
         Intent smsIntent = new Intent(RenseignerHeureArriveeActivity.this, SmsService.class);
         smsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
+        smsIntent.putExtra("strAdresse", strAdresse);
+        smsIntent.putExtra("minutes", minutes);
+        smsIntent.putExtra("heure", heure);
+        smsIntent.putExtra("jour", jour);
+        smsIntent.putExtra("mois", mois);
+        smsIntent.putExtra("annee", annee);
         startService(smsIntent);
     }
 
