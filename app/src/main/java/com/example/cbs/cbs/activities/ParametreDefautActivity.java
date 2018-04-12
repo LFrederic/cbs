@@ -121,16 +121,17 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
             editor.putString("defaultNum", phoneNumber);
             editor.putString("defaultName", name);
             updateDone = true;
-        } else if (addrChanged) {
+        }
+        if (addrChanged) {
             String defaultAddr = "Adresse actuelle par défaut :  + " + addr;
             displayDefaultAddr.setText(defaultAddr);
             editor.putString("defaultAdresse", addr);
             editor.putString("defaultLatLng", actualLatLng.toString());
             updateDone = true;
-        } else {
+        }
+        if (!numChanged && !addrChanged){
             Toast.makeText(ParametreDefautActivity.this, "Veuillez modifier les paramètres par défaut avant de valider",
                     Toast.LENGTH_SHORT).show();
-
         }
         if (updateDone) {
             editor.apply();
