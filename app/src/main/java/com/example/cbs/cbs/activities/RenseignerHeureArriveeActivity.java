@@ -23,7 +23,6 @@ import java.util.Date;
 
 public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
-
     EditText edtDatePicker;
     EditText edtTimePicker;
     String strAdresse;
@@ -45,6 +44,10 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
     }
 
+    /**
+     * Ouvre un DatePickerDialog permettant à l'utilisateur de choisir une date et procéde à des vérifications. L'utilisateur ne peut pas sélectionner une date passée.
+     * @param view EditText edtDatePicker
+     */
     public void choisirDate(View view)
     {
         edtDatePicker = (EditText) findViewById(R.id.edtDatePicker);
@@ -71,6 +74,10 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         datePickerDialog.show();
     }
 
+    /**
+     * Ouvre un TimePickerDialog permettant à l'utilisateur de choisir une heure et procéde à des vérifications. L'utilisateur ne peut pas sélectionner une heure passée.
+     * @param view EditText edtTimePicker
+     */
     public void choisirHeure(View view)
     {
 
@@ -129,6 +136,13 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Vérifie si la date précisé en paramètre est inférieure ou non à la date actuelle
+     * @param selectedDay       Un jour de mois             (1..31)
+     * @param selectedHour      Une heure de la journée     (0..24)
+     * @param selectedMinute    Une minute de la journée    (0..60)
+     * @return (true) Si la date précisé en paramètres est inférieure à la date actuelle
+     */
     private boolean isPastDate(int selectedDay, int selectedHour, int selectedMinute)
     {
         boolean isPastDate = false;
@@ -155,6 +169,10 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         return  isPastDate;
     }
 
+    /**
+     * Vérifie qu'une date ainsi qu'une heure soit renseignées sur l'activity, démarre le service SmsService puis renvoie l'utilisateur sur l'acitivity MainActivity
+     * @param view Button btnValiderHeureArrivee
+     */
     public void validerHeureArrivee(View view)
     {
         EditText edtDatePicker = findViewById(R.id.edtDatePicker);
@@ -175,6 +193,31 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         smsIntent.putExtra("mois", mois);
         smsIntent.putExtra("annee", annee);
         startService(smsIntent);
+
+        //TODO Revenir à l'écran d'accueil avec un toast "Rentrez bien !"
+        Intent returnToMainActivity = new Intent(this, MainActivity.class);
+        Toast.makeText(RenseignerHeureArriveeActivity.this, "Rentrez bien !", Toast.LENGTH_LONG).show();
+        startActivity(returnToMainActivity);
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
