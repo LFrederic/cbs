@@ -32,7 +32,7 @@ public class SmsService extends Service {
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
-        mReceiver = new SmsServiceBroadcastReceiver(phoneNumbers, minutes, heure, jour, mois, annee) {
+        mReceiver = new SmsServiceBroadcastReceiver() {
         };
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
@@ -59,6 +59,11 @@ public class SmsService extends Service {
         }
         Intent gpsIntent = new Intent(this, GPSLocalisationService.class);
         gpsIntent.putExtra("adresse", strAdresse);
+        gpsIntent.putExtra("minutes", minutes);
+        gpsIntent.putExtra("heure", heure);
+        gpsIntent.putExtra("jour", jour);
+        gpsIntent.putExtra("mois", mois);
+        gpsIntent.putExtra("annee", annee);
         startService(gpsIntent);
         return START_STICKY;
     }

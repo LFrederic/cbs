@@ -1,5 +1,7 @@
 package com.example.cbs.cbs.services;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -11,10 +13,12 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.cbs.cbs.broadcastreceiver.SmsServiceBroadcastReceiver;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
@@ -29,6 +33,12 @@ public class GPSLocalisationService extends Service {
     private LocationManager mLocationManager = null;
     private double testLatitude = 0;
     private double testLongitude = 0;
+    private boolean isArrived = false;
+    private int heure;
+    private int minutes;
+    private int jour;
+    private int mois;
+    private int annee;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -44,6 +54,11 @@ public class GPSLocalisationService extends Service {
         String[] latlong = sub.split(",");
         testLatitude = Double.parseDouble(latlong[0]);
         testLongitude = Double.parseDouble(latlong[1]);
+        minutes = intent.getIntExtra("minutes",0 );
+        heure = intent.getIntExtra("heure",0);
+        jour = intent.getIntExtra("jour",0);
+        mois = intent.getIntExtra("mois",0);
+        annee = intent.getIntExtra("annee",0);
         return START_STICKY;
     }
 
@@ -117,13 +132,29 @@ public class GPSLocalisationService extends Service {
 
             //TODO TEST A MODIFIER UNE FOIS QUON AURA DE VRAIES VALEURS
             if (distance[0] < 10.0) {
+                isArrived = true;
                 Toast.makeText(GPSLocalisationService.this, "Vous êtes arrivé à destination", Toast.LENGTH_SHORT).show();
                 Log.e("GPSUpdate", "Je suis bien arrivé, je suis à :" + res + "mètres de chez moi");
                 Intent intent = new Intent();
                 intent.setAction("com.example.broadcast.GPS_NOTIFICATION");
-                intent.putExtra("isArrived",true);
+                intent.putExtra("isArrived", isArrived);
                 sendBroadcast(intent);
+                stopService(new Intent(GPSLocalisationService.this , SmsService.class));
+                stopSelf();
             } else {
+                Context context = GPSLocalisationService.this;
+                Calendar cal = Calendar.getInstance();
+                Intent activate = new Intent(context, SmsServiceBroadcastReceiver.class);
+                activate.putExtra("isArrived", isArrived);
+                AlarmManager alarms = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                PendingIntent alarmIntent = PendingIntent.getBroadcast(context, 0, activate, 0);
+                cal.set(Calendar.SECOND, 00);
+                cal.set(Calendar.MINUTE, minutes);
+                cal.set(Calendar.HOUR_OF_DAY, heure);
+                cal.set(Calendar.DAY_OF_MONTH, jour);
+                cal.set(Calendar.MONTH, mois);
+                cal.set(Calendar.YEAR, annee);
+                alarms.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmIntent);
                 Log.e("GPSUpdate", "Je suis pas encore arrivé, je suis à :" + res + "mètres de chez moi");
             }
         }
