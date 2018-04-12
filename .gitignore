@@ -1,6 +1,7 @@
 # Built application files
 *.apk
 *.ap_
+*.orig
 
 # Files for the ART/Dalvik VM
 *.dex
@@ -40,6 +41,7 @@ captures/
 /.idea/libraries
 /.idea/caches/
 /.idea/codeStyles/
+/.idea/inspectionProfiles/
 /.idea/misc.xml
 .DS_Store
 /build
