@@ -32,7 +32,8 @@
         android:id="@+id/btnContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/contact" />
+        android:text="@string/contact"
+        android:background="@drawable/custom_button_border"/>
 
         <TextView
         android:id="@+id/numDisplay"

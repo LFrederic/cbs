@@ -45,12 +45,6 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         initActualParams();
 
         //Controllers
-        Button btnModifierAdresse = findViewById(R.id.btnModifierAdresse);
-        btnModifierAdresse.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                launchPlacePicker();
-            }
-        });
 
         Button validate = findViewById(R.id.validate);
         validate.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +79,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actualLatLng, zoomLevel));
     }
 
-    private void launchPlacePicker() {
+    public void launchPlacePicker(View view) {
         PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
         try {
             startActivityForResult(intentBuilder.build(RenseignerAdresseActivity.this), PLACE_PICKER_REQUEST);

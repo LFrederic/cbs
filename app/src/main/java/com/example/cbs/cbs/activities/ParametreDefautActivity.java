@@ -31,12 +31,6 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
     private static final int PLACE_PICKER_REQUEST = 2;
     private static final float zoomLevel = 16.0f;
     //Variable globales à mettre dans les SharedPreferences
-    String phoneNumber = "";
-    String name = "";
-    String addr = "";
-    LatLng actualLatLng;
-    boolean numChanged = false;
-    boolean addrChanged = false;
     GoogleMap mMap;
 
     @Override
@@ -48,27 +42,6 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         mapFragment.getMapAsync(this);
 
         initDefaultVar();
-
-        //Controllers
-        findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                launchContactPicker();
-            }
-
-
-        });
-
-        findViewById(R.id.paramValidate).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                updateDefaultParam();
-            }
-        });
-
-        findViewById(R.id.btnModifierAdresse).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                launchPlacePicker();
-            }
-        });
     }
 
     @Override
@@ -94,13 +67,13 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         initMapLocation();
     }
 
-    private void launchContactPicker() {
+    public void launchContactPicker(View view) {
         Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
                 ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
         startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
     }
 
-    private void launchPlacePicker() {
+    public void launchPlacePicker(View view) {
         PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
         try {
             startActivityForResult(intentBuilder.build(ParametreDefautActivity.this), PLACE_PICKER_REQUEST);
@@ -109,37 +82,12 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         }
     }
 
-    private void updateDefaultParam() {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
-        final TextView displayDefaultAddr = findViewById(R.id.defaultAddrDisplay);
-        SharedPreferences.Editor editor = prefs.edit();
-        Boolean updateDone = false;
-        if (numChanged) {
-            String defaultPerson = name + " " + phoneNumber;
-            displayDefaultNumero.setText(defaultPerson);
-            editor.putString("defaultNum", phoneNumber);
-            editor.putString("defaultName", name);
-            updateDone = true;
-        }
-        if (addrChanged) {
-            String defaultAddr = "Adresse actuelle par défaut :  + " + addr;
-            displayDefaultAddr.setText(defaultAddr);
-            editor.putString("defaultAdresse", addr);
-            editor.putString("defaultLatLng", actualLatLng.toString());
-            updateDone = true;
-        }
-        if (!numChanged && !addrChanged){
-            Toast.makeText(ParametreDefautActivity.this, "Veuillez modifier les paramètres par défaut avant de valider",
-                    Toast.LENGTH_SHORT).show();
-        }
-        if (updateDone) {
-            editor.apply();
-            startActivity(new Intent(ParametreDefautActivity.this, MainActivity.class));
-        }
-    }
-
     private void locationPicked(Intent data) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        final TextView displayDefaultAddr = findViewById(R.id.defaultAddrDisplay);
+        String addr = "";
+        LatLng actualLatLng;
+
         Place place = PlacePicker.getPlace(this, data);
         mMap.clear();
         addr = (String) place.getAddress();
@@ -148,10 +96,21 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
                 .position(actualLatLng)
                 .title("Actual Place"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actualLatLng, zoomLevel));
-        addrChanged = true;
+
+        SharedPreferences.Editor editor = prefs.edit();
+        String defaultAddr = "Adresse actuelle par défaut :  + " + addr;
+        displayDefaultAddr.setText(defaultAddr);
+        editor.putString("defaultAdresse", addr);
+        editor.putString("defaultLatLng", actualLatLng.toString());
+        editor.apply();
     }
 
     private void contactPicked(Intent data) {
+        String phoneNumber = "";
+        String name = "";
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
+        SharedPreferences.Editor editor = prefs.edit();
 
         Uri uri = data.getData();
         if (uri != null) {
@@ -166,7 +125,12 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
                 cursor.close();
             }
         }
-        numChanged = true;
+
+        String defaultPerson = name + " " + phoneNumber;
+        displayDefaultNumero.setText(defaultPerson);
+        editor.putString("defaultNum", phoneNumber);
+        editor.putString("defaultName", name);
+        editor.apply();
     }
 
     private void initMapLocation() {
