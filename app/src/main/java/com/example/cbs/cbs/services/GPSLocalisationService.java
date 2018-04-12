@@ -33,7 +33,6 @@ public class GPSLocalisationService extends Service {
     private LocationManager mLocationManager = null;
     private double testLatitude = 0;
     private double testLongitude = 0;
-    private boolean isArrived = false;
     private int heure;
     private int minutes;
     private int jour;
@@ -132,12 +131,11 @@ public class GPSLocalisationService extends Service {
 
             //TODO TEST A MODIFIER UNE FOIS QUON AURA DE VRAIES VALEURS
             if (distance[0] < 10.0) {
-                isArrived = true;
                 Toast.makeText(GPSLocalisationService.this, "Vous êtes arrivé à destination", Toast.LENGTH_SHORT).show();
                 Log.e("GPSUpdate", "Je suis bien arrivé, je suis à :" + res + "mètres de chez moi");
                 Intent intent = new Intent();
                 intent.setAction("com.example.broadcast.GPS_NOTIFICATION");
-                intent.putExtra("isArrived", isArrived);
+                intent.putExtra("isArrived", true);
                 sendBroadcast(intent);
                 stopService(new Intent(GPSLocalisationService.this , SmsService.class));
                 stopSelf();
@@ -145,7 +143,7 @@ public class GPSLocalisationService extends Service {
                 Context context = GPSLocalisationService.this;
                 Calendar cal = Calendar.getInstance();
                 Intent activate = new Intent(context, SmsServiceBroadcastReceiver.class);
-                activate.putExtra("isArrived", isArrived);
+                activate.putExtra("isArrived", false);
                 AlarmManager alarms = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
                 PendingIntent alarmIntent = PendingIntent.getBroadcast(context, 0, activate, 0);
                 cal.set(Calendar.SECOND, 00);
