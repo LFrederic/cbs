@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         //  FirebaseApp.initializeApp(this);
 
+        //Demande de permission à l'utilisateur pour l'accès à sa position GPS, l'envoi de SMS et accès aux contacts
         System.out.print("MainActivity.java : Application lancée");
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabaseDemandeRetour = FirebaseDatabase.getInstance().getReference("DemandeRetour");
 
+        //Affichage d'un bouton 'Je suis Safe' avec un Intent vers RenseignerNumeroActivity
         ImageButton toAccueil = findViewById(R.id.mainButton);
         toAccueil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Affichage d'un bouton paramètres avec un Intent vers ParametreDefautActivity
         ImageButton param = findViewById(R.id.paramButton);
         param.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Connexion à la BDD Firebase
         mAuth.signInWithEmailAndPassword("test@gmail.com", "testtest").addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
