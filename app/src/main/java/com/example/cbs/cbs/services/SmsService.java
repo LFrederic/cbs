@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmsService extends Service {
-    private List<String> phoneNumbers = new ArrayList<>();
+    private ArrayList<String> phoneNumbers = new ArrayList<>();
     private String strAdresse;
     private int heure;
     private int minutes;
@@ -26,14 +26,12 @@ public class SmsService extends Service {
         return null;
     }
 
-    private SmsServiceBroadcastReceiver mReceiver;
+    private SmsServiceBroadcastReceiver mReceiver = new SmsServiceBroadcastReceiver();
 
 
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
-        mReceiver = new SmsServiceBroadcastReceiver() {
-        };
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
         registerReceiver(mReceiver, mIntentFilter);
@@ -55,7 +53,6 @@ public class SmsService extends Service {
             jour = intent.getIntExtra("jour", 0);
             mois = intent.getIntExtra("mois", 0);
             annee = intent.getIntExtra("annee", 0);
-            mReceiver.setPhoneNumbers(phoneNumbers);
         }
         Intent gpsIntent = new Intent(this, GPSLocalisationService.class);
         gpsIntent.putExtra("adresse", strAdresse);
@@ -64,6 +61,7 @@ public class SmsService extends Service {
         gpsIntent.putExtra("jour", jour);
         gpsIntent.putExtra("mois", mois);
         gpsIntent.putExtra("annee", annee);
+        gpsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
         startService(gpsIntent);
         return START_STICKY;
     }

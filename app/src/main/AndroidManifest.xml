@@ -22,9 +22,6 @@
             android:enabled="true" />
 
         <receiver android:name=".broadcastreceiver.SmsServiceBroadcastReceiver">
-            <intent-filter>
-                <action android:name="com.example.broadcast.GPS_NOTIFICATION" />
-            </intent-filter>
         </receiver>
 
         <activity android:name=".activities.MainActivity">

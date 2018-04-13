@@ -16,19 +16,12 @@ import java.util.List;
 public class SmsServiceBroadcastReceiver extends BroadcastReceiver {
     private List<String> phoneNumbers;
 
-    public SmsServiceBroadcastReceiver(List<String> _phoneNumbers, int _minutes, int _heure, int _jour, int _mois, int _annee) {
-        phoneNumbers = _phoneNumbers;
-    }
-
     public SmsServiceBroadcastReceiver() {
-    }
-
-    public void setPhoneNumbers(List<String> phoneNumbers) {
-        this.phoneNumbers = phoneNumbers;
     }
 
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("com.example.broadcast.GPS_NOTIFICATION")) {
+            phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
             boolean isArrived = intent.getBooleanExtra("isArrived", false);
             if (isArrived) {
                 //envoi sms

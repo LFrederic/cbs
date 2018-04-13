@@ -18,6 +18,7 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
@@ -38,6 +39,8 @@ public class GPSLocalisationService extends Service {
     private int jour;
     private int mois;
     private int annee;
+    private ArrayList<String> phoneNumbers;
+    private Boolean smsRetardEnvoye = false;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -47,17 +50,21 @@ public class GPSLocalisationService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.e(TAG, "onStartCommand");
+        if(intent!=null){
+            String adresse = intent.getStringExtra("adresse");
+            String sub = adresse.substring(10, adresse.length() - 1);
+            String[] latlong = sub.split(",");
+            testLatitude = Double.parseDouble(latlong[0]);
+            testLongitude = Double.parseDouble(latlong[1]);
+            minutes = intent.getIntExtra("minutes",0 );
+            heure = intent.getIntExtra("heure",0);
+            jour = intent.getIntExtra("jour",0);
+            mois = intent.getIntExtra("mois",0);
+            annee = intent.getIntExtra("annee",0);
+            phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
+        }
+
         super.onStartCommand(intent, flags, startId);
-        String adresse = intent.getStringExtra("adresse");
-        String sub = adresse.substring(10, adresse.length() - 1);
-        String[] latlong = sub.split(",");
-        testLatitude = Double.parseDouble(latlong[0]);
-        testLongitude = Double.parseDouble(latlong[1]);
-        minutes = intent.getIntExtra("minutes",0 );
-        heure = intent.getIntExtra("heure",0);
-        jour = intent.getIntExtra("jour",0);
-        mois = intent.getIntExtra("mois",0);
-        annee = intent.getIntExtra("annee",0);
         return START_STICKY;
     }
 
@@ -136,23 +143,27 @@ public class GPSLocalisationService extends Service {
                 Intent intent = new Intent();
                 intent.setAction("com.example.broadcast.GPS_NOTIFICATION");
                 intent.putExtra("isArrived", true);
+                intent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
                 sendBroadcast(intent);
                 stopService(new Intent(GPSLocalisationService.this , SmsService.class));
                 stopSelf();
             } else {
                 Context context = GPSLocalisationService.this;
                 Calendar cal = Calendar.getInstance();
-                Intent activate = new Intent(context, SmsServiceBroadcastReceiver.class);
+                Intent activate = new Intent();
                 activate.putExtra("isArrived", false);
-                AlarmManager alarms = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-                PendingIntent alarmIntent = PendingIntent.getBroadcast(context, 0, activate, 0);
+                activate.putStringArrayListExtra("phoneNumbers", phoneNumbers);
+                activate.setAction("com.example.broadcast.GPS_NOTIFICATION");
                 cal.set(Calendar.SECOND, 00);
                 cal.set(Calendar.MINUTE, minutes);
                 cal.set(Calendar.HOUR_OF_DAY, heure);
                 cal.set(Calendar.DAY_OF_MONTH, jour);
                 cal.set(Calendar.MONTH, mois);
                 cal.set(Calendar.YEAR, annee);
-                alarms.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), alarmIntent);
+                if(cal.getTimeInMillis()<= System.currentTimeMillis() && !smsRetardEnvoye){
+                    smsRetardEnvoye = true;
+                    sendBroadcast(activate);
+                }
                 Log.e("GPSUpdate", "Je suis pas encore arrivé, je suis à :" + res + "mètres de chez moi");
             }
         }
