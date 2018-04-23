@@ -54,7 +54,7 @@
         tools:context=".activities.RenseignerAdresseActivity" />
 
         <Button
-        android:id="@+id/btnModifierAdresse"
+        android:id="@+id/button_modifier_adresse"
         android:background="@drawable/custom_button_border"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"

@@ -45,7 +45,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         initActualParams();
 
         //Controllers
-        Button btnModifierAdresse = findViewById(R.id.btnModifierAdresse);
+        Button btnModifierAdresse = findViewById(R.id.button_modifier_adresse);
         btnModifierAdresse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 launchPlacePicker();

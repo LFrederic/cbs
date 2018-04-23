@@ -10,9 +10,11 @@ import android.provider.ContactsContract;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.cbs.cbs.Models.Adresse;
+import com.example.cbs.cbs.Models.Contact;
 import com.example.cbs.cbs.R;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -35,9 +37,19 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
     String name = "";
     String addr = "";
     LatLng actualLatLng;
-    boolean numChanged = false;
+    boolean contactHasChanged = false;
     boolean addrChanged = false;
     GoogleMap mMap;
+
+    //SharedPreferences
+    SharedPreferences prefs;
+
+    //View variables
+    TextView text_contact;
+    TextView text_adresse;
+
+    EditText edit_code_pin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,29 +59,22 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        initDefaultVar();
 
-        //Controllers
-        findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                launchContactPicker();
-            }
-
-
-        });
-
-        findViewById(R.id.paramValidate).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                updateDefaultParam();
-            }
-        });
-
-        findViewById(R.id.btnModifierAdresse).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                launchPlacePicker();
-            }
-        });
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        initializingView();
+        initializingDefaultVariables();
     }
+
+    /**
+     * Permet d'initialiser la view
+     */
+    private void initializingView() {
+        text_contact = findViewById(R.id.text_numero_telephone);
+        text_adresse = findViewById(R.id.text_adresse);
+
+        edit_code_pin = findViewById(R.id.edit_code_pin);
+    }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -77,9 +82,18 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
             switch (requestCode) {
                 case RESULT_PICK_CONTACT:
                     contactPicked(data);
+
+                    String nomContact = prefs.getString("nomContact", null);
+                    String numeroContact = prefs.getString("numeroContact", null);
+
+                    text_contact.setText(nomContact + " " + numeroContact);
                     break;
                 case PLACE_PICKER_REQUEST:
                     locationPicked(data);
+
+                    String adresse = prefs.getString("adresse", null);
+
+                    text_adresse.setText("Adresse actuelle par défaut :  " + adresse);
                     break;
             }
         } else {
@@ -94,13 +108,13 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         initMapLocation();
     }
 
-    private void launchContactPicker() {
+    public void launchContactPicker(View view) {
         Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
                 ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
         startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
     }
 
-    private void launchPlacePicker() {
+    public void launchPlacePicker(View view) {
         PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
         try {
             startActivityForResult(intentBuilder.build(ParametreDefautActivity.this), PLACE_PICKER_REQUEST);
@@ -109,35 +123,32 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         }
     }
 
-    private void updateDefaultParam() {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
-        final TextView displayDefaultAddr = findViewById(R.id.defaultAddrDisplay);
-        SharedPreferences.Editor editor = prefs.edit();
-        Boolean updateDone = false;
-        if (numChanged) {
-            String defaultPerson = name + " " + phoneNumber;
-            displayDefaultNumero.setText(defaultPerson);
-            editor.putString("defaultNum", phoneNumber);
-            editor.putString("defaultName", name);
-            updateDone = true;
-        }
-        if (addrChanged) {
-            String defaultAddr = "Adresse actuelle par défaut :  + " + addr;
-            displayDefaultAddr.setText(defaultAddr);
-            editor.putString("defaultAdresse", addr);
-            editor.putString("defaultLatLng", actualLatLng.toString());
-            updateDone = true;
-        }
-        if (!numChanged && !addrChanged){
-            Toast.makeText(ParametreDefautActivity.this, "Veuillez modifier les paramètres par défaut avant de valider",
-                    Toast.LENGTH_SHORT).show();
-        }
-        if (updateDone) {
-            editor.apply();
-            startActivity(new Intent(ParametreDefautActivity.this, MainActivity.class));
-        }
+    public void updateDefaultParam(View view) {
+
+    if (codePinHasChanged()) {
+        String codePin = edit_code_pin.getText().toString();
+        updateCodePinSharedPreferences(codePin);
     }
+
+    startActivity(new Intent(ParametreDefautActivity.this, MainActivity.class));
+
+    }
+
+    /**
+     * Permet de savoir si l'utilisateur a changé son code pin dans les paramètres
+     * @return (true) Si l'utilisateur a change le code pin
+     */
+    private boolean codePinHasChanged() {
+        final String codePin = prefs.getString("codePin", "");
+        Boolean hasChanged = false;
+
+        if (edit_code_pin.getText().length() > 0 && !edit_code_pin.getText().toString().equals(codePin)){
+            hasChanged = true;
+        }
+
+        return hasChanged;
+    }
+
 
     private void locationPicked(Intent data) {
         Place place = PlacePicker.getPlace(this, data);
@@ -149,6 +160,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
                 .title("Actual Place"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actualLatLng, zoomLevel));
         addrChanged = true;
+
+        Adresse adresse = new Adresse(addr, actualLatLng);
+
+        updateAdresseSharedPreferences(adresse);
     }
 
     private void contactPicked(Intent data) {
@@ -161,12 +176,40 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
                 cursor.moveToFirst();
                 int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
                 int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
-                phoneNumber = cursor.getString(phoneIndex);
-                name = cursor.getString(nameIndex);
+
+                Contact contact = new Contact(cursor.getString(nameIndex), cursor.getString(phoneIndex));
+                updateContactSharedPreferences(contact);
                 cursor.close();
             }
         }
-        numChanged = true;
+    }
+
+    private void updateContactSharedPreferences(Contact contact) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putString("nomContact", contact.getNom());
+        editor.putString("numeroContact", contact.getNumero());
+
+        text_adresse.setText(contact.getNom() + " " + contact.getNumero());
+
+        editor.apply();
+    }
+
+    private void updateAdresseSharedPreferences(Adresse adresse) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putString("adresse", adresse.getAdresse());
+        editor.putString("defaultLatLng", adresse.getLatLng().toString());
+
+        editor.apply();
+    }
+
+    private void updateCodePinSharedPreferences(String codePin) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putString("codePin", codePin);
+
+        editor.apply();
     }
 
     private void initMapLocation() {
@@ -187,13 +230,14 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
 
     }
 
-    private void initDefaultVar() {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final TextView displayDefaultNumero = findViewById(R.id.defaultNumDisplay);
-        final TextView displayDefaultAddr = findViewById(R.id.defaultAddrDisplay);
-        String defaultPerson = prefs.getString("defaultNum", "") + " " + prefs.getString("defaultName", "");
-        displayDefaultNumero.setText(defaultPerson);
-        String defaultAddr = "Adresse actuelle par défaut :  + " + prefs.getString("defaultAdresse", "");
-        displayDefaultAddr.setText(defaultAddr);
+    private void initializingDefaultVariables() {
+        String nomContact = prefs.getString("nomContact", null);
+        String numeroContact = prefs.getString("numeroContact", null);
+        String adresse = prefs.getString("adresse", null);
+        String codePin = prefs.getString("codePin",null);
+
+        text_contact.setText(nomContact + " " + numeroContact);
+        text_adresse.setText("Adresse actuelle par défaut :  " + adresse);
+        edit_code_pin.setText(codePin);
     }
 }

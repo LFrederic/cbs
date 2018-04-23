@@ -21,4 +21,5 @@
     <string name="edtTimePicker">Choisir une heure</string>
     <string name="btnValiderHeureArrivee">Valider l\'heure d\'arrivée</string>
     <string name="txtAdresse">Adresse à définir</string>
+    <string name="text_code_pin">Code PIN : </string>
 </resources>
