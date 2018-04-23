@@ -14,3 +14,6 @@ ABI : x86
 Cible : Android (8.1) (Google Play)
 
 Il faut ensuite penser à mettre à jour le Google Play sur l'émulateur. Il faut donc lancer l'émulateur, cliquer sur les 3 points en bas sur la barre annexe, cliquer sur Google Play + Update. La version actuelle du Google Play est : 12.5.21 (040700-189987672)
+
+# Project GuideLines and naming convention
+Respecter ces conventions : https://github.com/umesh0492/android-guidelines/blob/master/project_and_code_guidelines.md
