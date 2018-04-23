@@ -32,13 +32,8 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
     private static final int RESULT_PICK_CONTACT = 1;
     private static final int PLACE_PICKER_REQUEST = 2;
     private static final float zoomLevel = 16.0f;
-    //Variable globales à mettre dans les SharedPreferences
-    String phoneNumber = "";
-    String name = "";
-    String addr = "";
-    LatLng actualLatLng;
-    boolean contactHasChanged = false;
-    boolean addrChanged = false;
+
+    //GoogleMap
     GoogleMap mMap;
 
     //SharedPreferences
@@ -108,12 +103,20 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         initMapLocation();
     }
 
+    /**
+     * Démarre une activité permettant à l'utilisateur de choisir un contact
+     * @param view
+     */
     public void launchContactPicker(View view) {
         Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
                 ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
         startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
     }
 
+    /**
+     * Démarre une activité permettant à l'utilisateur de choisir un lieu d'arrivée sur la map
+     * @param view
+     */
     public void launchPlacePicker(View view) {
         PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
         try {
@@ -123,6 +126,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         }
     }
 
+    /**
+     * Met à jour le codePin dans les SharedPreferences et ferme l'activity
+     * @param view
+     */
     public void updateDefaultParam(View view) {
 
     if (codePinHasChanged()) {
@@ -150,22 +157,29 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
     }
 
 
+    /**
+     * Permet de récupérer les données du picker de la map et de mofifier les SharedPreferences
+     * @param data Les données retournées
+     */
     private void locationPicked(Intent data) {
         Place place = PlacePicker.getPlace(this, data);
         mMap.clear();
-        addr = (String) place.getAddress();
-        actualLatLng = place.getLatLng();
+        String addr = (String) place.getAddress();
+        LatLng actualLatLng = place.getLatLng();
         mMap.addMarker(new MarkerOptions()
                 .position(actualLatLng)
                 .title("Actual Place"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actualLatLng, zoomLevel));
-        addrChanged = true;
 
         Adresse adresse = new Adresse(addr, actualLatLng);
 
         updateAdresseSharedPreferences(adresse);
     }
 
+    /**
+     * Est appelé lorsqu'un contact a été choisi par l'utilisateur. Ce contact vient ensuite remplacer le contact dans les SharedPreferences
+     * @param data
+     */
     private void contactPicked(Intent data) {
 
         Uri uri = data.getData();
@@ -184,6 +198,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         }
     }
 
+    /**
+     * Met à jour le contact dans les SharedPreferences
+     * @param contact
+     */
     private void updateContactSharedPreferences(Contact contact) {
         SharedPreferences.Editor editor = prefs.edit();
 
@@ -195,6 +213,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         editor.apply();
     }
 
+    /**
+     * Met à jour l'adresse et le defaultLatLng dans les SharedPreferences
+     * @param adresse
+     */
     private void updateAdresseSharedPreferences(Adresse adresse) {
         SharedPreferences.Editor editor = prefs.edit();
 
@@ -204,6 +226,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         editor.apply();
     }
 
+    /**
+     * Met à jour codePin dans les SharedPreferences
+     * @param codePin
+     */
     private void updateCodePinSharedPreferences(String codePin) {
         SharedPreferences.Editor editor = prefs.edit();
 
@@ -212,6 +238,9 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         editor.apply();
     }
 
+    /**
+     * Initialise la map
+     */
     private void initMapLocation() {
         String actualLatLng2 = PreferenceManager.getDefaultSharedPreferences(this).getString("defaultLatLng", "");
         if (!"".equals(actualLatLng2)) {
@@ -230,6 +259,9 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
 
     }
 
+    /**
+     * Lit les SharedPreferences et mets à jours l'interface graphique
+     */
     private void initializingDefaultVariables() {
         String nomContact = prefs.getString("nomContact", null);
         String numeroContact = prefs.getString("numeroContact", null);
