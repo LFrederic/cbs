@@ -23,14 +23,17 @@ import java.util.Date;
 
 public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
-    EditText edtDatePicker;
-    EditText edtTimePicker;
-    String strAdresse;
-    int heure;
-    int minutes;
-    int jour;
-    int mois;
-    int annee;
+    //View
+    private EditText edit_date_picker;
+    private EditText edit_time_picker;
+    private String strAdresse;
+
+    //Variables
+    private int heure;
+    private int minutes;
+    private int jour;
+    private int mois;
+    private int annee;
     private ArrayList<String> phoneNumbers;
 
     @Override
@@ -42,15 +45,16 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         strAdresse = intent.getStringExtra("adresse");
         phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
+
+        initialiserView();
     }
 
     /**
      * Ouvre un DatePickerDialog permettant à l'utilisateur de choisir une date et procéde à des vérifications. L'utilisateur ne peut pas sélectionner une date passée.
-     * @param view EditText edtDatePicker
+     * @param view EditText edit_date_picker
      */
     public void choisirDate(View view)
     {
-        edtDatePicker = (EditText) findViewById(R.id.edtDatePicker);
         // On initialise le calendrier à la date d'aujourd'hui
         final Calendar c = Calendar.getInstance();
         int mYear = c.get(Calendar.YEAR); // current year
@@ -63,7 +67,7 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
                         // On ajoute la date à l'edittext
-                        edtDatePicker.setText(dayOfMonth + "-"
+                        edit_date_picker.setText(dayOfMonth + "-"
                                 + (monthOfYear + 1) + "-" + year);
                         jour = dayOfMonth;
                         mois = monthOfYear;
@@ -76,15 +80,12 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
     /**
      * Ouvre un TimePickerDialog permettant à l'utilisateur de choisir une heure et procéde à des vérifications. L'utilisateur ne peut pas sélectionner une heure passée.
-     * @param view EditText edtTimePicker
+     * @param view EditText edit_time_picker
      */
     public void choisirHeure(View view)
     {
-
-        edtDatePicker = (EditText) findViewById(R.id.edtDatePicker);
-
         //Verifications des conditions
-        if (edtDatePicker.getText().toString().isEmpty())
+        if (edit_date_picker.getText().toString().isEmpty())
         {
             Toast.makeText(RenseignerHeureArriveeActivity.this, "Veuillez d'abord choisir une date pour le rendez-vous.", Toast.LENGTH_LONG).show();
             return;
@@ -92,7 +93,6 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
 
         //Ouverture du timePicker + récupération des données
-        edtTimePicker = findViewById(R.id.edtTimePicker);
         Calendar mcurrentTime = Calendar.getInstance();
         int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
         int minute = mcurrentTime.get(Calendar.MINUTE);
@@ -100,7 +100,7 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         mTimePicker = new TimePickerDialog(RenseignerHeureArriveeActivity.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
-                String dtStart = edtDatePicker.getText().toString();
+                String dtStart = edit_date_picker.getText().toString();
                 SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
                 try
                 {
@@ -111,7 +111,7 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
 
                     if (isPastDate(selectedDay, selectedHour, selectedMinute))
                     {
-                        edtTimePicker.setText("");
+                        edit_time_picker.setText("");
                         return;
                     }
 
@@ -126,7 +126,7 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
                 }
 
 
-                    edtTimePicker.setText( selectedHour + ":" + selectedMinute);
+                    edit_time_picker.setText( selectedHour + ":" + selectedMinute);
                     heure = selectedHour;
                     minutes = selectedMinute;
             }
@@ -175,12 +175,9 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
      */
     public void validerHeureArrivee(View view)
     {
-        EditText edtDatePicker = findViewById(R.id.edtDatePicker);
-        EditText edtTimePicker = findViewById(R.id.edtTimePicker);
+         if (edit_date_picker.getText().toString().equals("") || edit_time_picker.getText().toString().equals("")) {Toast.makeText(RenseignerHeureArriveeActivity.this, "Veuillez choisir une date pour le rendez-vous", Toast.LENGTH_LONG).show(); return;}
 
-         if (edtDatePicker.getText().toString().equals("") || edtTimePicker.getText().toString().equals("")) {Toast.makeText(RenseignerHeureArriveeActivity.this, "Veuillez choisir une date pour le rendez-vous", Toast.LENGTH_LONG).show(); return;}
-
-        String dateString = edtDatePicker.getText().toString() + " " + edtTimePicker.getText().toString();
+        String dateString = edit_date_picker.getText().toString() + " " + edit_time_picker.getText().toString();
         Log.i("dateString", "RenseignerHeureArriveeActivity -> dateString : " + dateString);
 
 
@@ -198,6 +195,11 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         Intent returnToMainActivity = new Intent(this, MainActivity.class);
         Toast.makeText(RenseignerHeureArriveeActivity.this, "Rentrez bien !", Toast.LENGTH_LONG).show();
         startActivity(returnToMainActivity);
+    }
+
+    public void initialiserView() {
+        edit_date_picker = findViewById(R.id.edtDatePicker);
+        edit_time_picker = findViewById(R.id.edtTimePicker);
     }
 
 }
