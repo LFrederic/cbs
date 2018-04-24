@@ -29,11 +29,12 @@
         android:gravity="center"/>
 
         <Button
-        android:id="@+id/btnContact"
+        android:id="@+id/button_choisir_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contact"
-        android:background="@drawable/custom_button_border"/>
+        android:background="@drawable/custom_button_border"
+        android:onClick="choisirContact"/>
 
         <TextView
         android:id="@+id/numDisplay"
@@ -45,13 +46,14 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnValidate"
+            android:id="@+id/button_valider_numero"
             android:background="@drawable/custom_button_border"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="@string/valider"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="validerNumero"/>
     </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>

@@ -24,39 +24,46 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
     ArrayList<String> names = new ArrayList<>();
     ArrayList<String> phoneNumbers = new ArrayList<>();
 
+    //SharedPreferences
+    private SharedPreferences prefs;
+
+    //View
+    private TextView numDisplay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_renseigner_numero);
 
-        Button btnContact = findViewById(R.id.btnContact);
-        Button btnValidate = findViewById(R.id.btnValidate);
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        initializingView();
+        loadSharedPreferences();
+        displayContactList();
+    }
+
+    private void initializingView() {
+        numDisplay = findViewById(R.id.numDisplay);
+    }
+
+    private void loadSharedPreferences() {
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getString("defaultNum", "").equals("")) {
             String defaultNum = prefs.getString("defaultNum", "");
             String defaultName = prefs.getString("defaultName", "");
             phoneNumbers.add(defaultNum);
             names.add(defaultName);
-            displayContactList();
         }
+    }
 
-        btnContact.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
-                        ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
-                startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
-            }
+    public void choisirContact(View view) {
+        Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
+                ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+        startActivityForResult(contactPickerIntent, RESULT_PICK_CONTACT);
+    }
 
-
-        });
-
-        btnValidate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class);
-                i.putStringArrayListExtra("phoneNumbers" ,phoneNumbers);
-                startActivity(i);
-            }
-        });
+    public void validerNumero(View view) {
+        Intent i = new Intent(RenseignerNumeroActivity.this, RenseignerAdresseActivity.class);
+        i.putStringArrayListExtra("phoneNumbers" ,phoneNumbers);
+        startActivity(i);
     }
 
     @Override
@@ -94,8 +101,7 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
         }
     }
 
-    public void displayContactList() {
-        TextView numDisplay = findViewById(R.id.numDisplay);
+    private void displayContactList() {
         String contactsList = "";
         for (int i = 0; i < phoneNumbers.size(); i++) {
             contactsList += "+ " + names.get(i) + " " + phoneNumbers.get(i) + "\n";
