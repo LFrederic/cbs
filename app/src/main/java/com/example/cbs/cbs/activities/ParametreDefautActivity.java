@@ -163,9 +163,6 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
      */
     private void locationPicked(Intent data) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final TextView displayDefaultAddr = findViewById(R.id.defaultAddrDisplay);
-        String addr = "";
-        LatLng actualLatLng;
 
         Place place = PlacePicker.getPlace(this, data);
         mMap.clear();
