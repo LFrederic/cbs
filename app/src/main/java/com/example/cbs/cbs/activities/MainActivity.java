@@ -30,35 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //  FirebaseApp.initializeApp(this);
-
-        //Demande de permission à l'utilisateur pour l'accès à sa position GPS, l'envoi de SMS et accès aux contacts
-        System.out.print("MainActivity.java : Application lancée");
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.SEND_SMS, Manifest.permission.READ_PHONE_STATE},
-                REQUEST_CODE_FINE_GPS);
-
         mAuth = FirebaseAuth.getInstance();
         mDatabaseDemandeRetour = FirebaseDatabase.getInstance().getReference("DemandeRetour");
-
-        //Affichage d'un bouton 'Je suis Safe' avec un Intent vers RenseignerNumeroActivity
-        ImageButton toAccueil = findViewById(R.id.mainButton);
-        toAccueil.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RenseignerNumeroActivity.class));
-            }
-        });
-
-
-        //Affichage d'un bouton paramètres avec un Intent vers ParametreDefautActivity
-        ImageButton param = findViewById(R.id.paramButton);
-        param.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ParametreDefautActivity.class));
-            }
-        });
-
 
         //Connexion à la BDD Firebase
         mAuth.signInWithEmailAndPassword("test@gmail.com", "testtest").addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -85,5 +58,23 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    /**
+     * Demande de permission à l'utilisateur pour l'accès à sa position GPS, l'envoi de SMS et accès aux contacts
+     */
+    private void requestPermissions() {
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.SEND_SMS, Manifest.permission.READ_PHONE_STATE},
+                REQUEST_CODE_FINE_GPS);
+    }
+
+    public void goToParametreDefautActivity(View view) {
+        startActivity(new Intent(MainActivity.this, ParametreDefautActivity.class));
+    }
+
+    public void goToRenseignerNumeroActivity(View view) {
+        startActivity(new Intent(MainActivity.this, RenseignerNumeroActivity.class));
     }
 }
