@@ -32,8 +32,6 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
     private float zoomLevel = 16.0f; //This goes up to 21
     private ArrayList<String> phoneNumbers;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,18 +41,13 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         mapFragment.getMapAsync(this);
 
         initActualParams();
+    }
 
-        //Controllers
-
-        Button validate = findViewById(R.id.validate);
-        validate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(RenseignerAdresseActivity.this, RenseignerHeureArriveeActivity.class);
-                intent.putStringArrayListExtra("phoneNumbers",phoneNumbers);
-                intent.putExtra("adresse",actualLatLng.toString());
-                startActivity(intent);
-            }
-        });
+    public void validerAdresse(View view) {
+        Intent intent = new Intent(RenseignerAdresseActivity.this, RenseignerHeureArriveeActivity.class);
+        intent.putStringArrayListExtra("phoneNumbers",phoneNumbers);
+        intent.putExtra("adresse",actualLatLng.toString());
+        startActivity(intent);
     }
 
     @Override
@@ -65,10 +58,10 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
                 actualPlace = place.getAddress();
                 actualLatLng = place.getLatLng();
                 updatePlace();
-
             }
         }
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -79,7 +72,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(actualLatLng, zoomLevel));
     }
 
-    public void launchPlacePicker(View view) {
+    public void modifierAdresse(View view) {
         PlacePicker.IntentBuilder intentBuilder = new PlacePicker.IntentBuilder();
         try {
             startActivityForResult(intentBuilder.build(RenseignerAdresseActivity.this), PLACE_PICKER_REQUEST);
@@ -87,6 +80,7 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
             e.printStackTrace();
         }
     }
+
     private void updatePlace() {
         mMap.clear();
         mMap.addMarker(new MarkerOptions()
