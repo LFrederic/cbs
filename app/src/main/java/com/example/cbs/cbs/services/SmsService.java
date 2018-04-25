@@ -63,6 +63,6 @@ public class SmsService extends Service {
         gpsIntent.putExtra("annee", annee);
         gpsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
         startService(gpsIntent);
-        return START_STICKY;
+        return START_REDELIVER_INTENT;
     }
 }

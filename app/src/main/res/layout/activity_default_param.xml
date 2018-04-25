@@ -8,107 +8,120 @@
     android:gravity="center_vertical"
     tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity"
     android:background="@drawable/accueil"
-    android:padding="15dp">>
+    android:padding="15dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:background="@drawable/custom_background_group"
-        android:padding="20dp">
-
-        <TextView
-            android:id="@+id/titreParametre"
-            android:textSize="30sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/titreParametre"
-            android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/textDefaultNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/textDefaultNumber" />
-
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity">
-            android:background="@android:color/transparent">
-
-
-            <Button
-                android:id="@+id/button_selectionner_contact"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contact"
-                android:onClick="launchContactPicker"/>
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@drawable/custom_background_group"
+            android:padding="20dp">
 
             <TextView
-                android:id="@+id/text_numero_telephone"
+                android:id="@+id/titreParametre"
+                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/titreParametre"
                 android:gravity="center"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_code_pin"/>
-            <EditText
-                android:id="@+id/edit_code_pin"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLength="5"
-                android:maxLines="1"
-                android:inputType="number"/>
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/custom_background_group"
+                >
 
+                <TextView
+                    android:id="@+id/textDefaultNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textDefaultNumber" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity">
+                    android:background="@android:color/transparent">
+
+
+                    <Button
+                        android:id="@+id/button_selectionner_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:onClick="launchContactPicker"/>
+
+                    <TextView
+                        android:id="@+id/text_numero_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_code_pin"/>
+                    <EditText
+                        android:id="@+id/edit_code_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_adresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultAddrDisplay" />
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="90pt"
+                    tools:context=".activities.RenseignerAdresseActivity" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_modifier_adresse"
+                android:background="@drawable/custom_button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/btnModifierAdresse"
+                android:onClick="launchPlacePicker"
+                />
+
+            <Button
+                android:id="@+id/button_valider_parametres"
+                android:background="@drawable/custom_button_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valider"
+                android:onClick="updateDefaultParam"/>
 
         </LinearLayout>
 
-
-        <TextView
-            android:id="@+id/text_adresse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/defaultAddrDisplay" />
-
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="90pt"
-            tools:context=".activities.RenseignerAdresseActivity" />
-
-        <Button
-            android:id="@+id/button_modifier_adresse"
-            android:background="@drawable/custom_button_border"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/btnModifierAdresse"
-            android:onClick="launchPlacePicker"
-            />
-        <Button
-            android:id="@+id/button_valider_parametres"
-            android:background="@drawable/custom_button_border"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/valider"
-            android:onClick="updateDefaultParam"/>
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

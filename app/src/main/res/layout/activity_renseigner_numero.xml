@@ -9,7 +9,7 @@
     android:gravity="center_vertical"
     tools:context="com.example.cbs.cbs.activities.ParametreDefautActivity"
     android:background="@drawable/accueil"
-    android:padding="15dp">>
+    android:padding="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,42 +19,59 @@
         android:background="@drawable/custom_background_group"
         android:padding="20dp">
 
-
         <TextView
-        android:id="@+id/titreRenseignerNumero"
-        android:textSize="30sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/titreRenseignerNumero"
-        android:gravity="center"/>
-
-        <Button
-        android:id="@+id/button_choisir_contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/contact"
-        android:background="@drawable/custom_button_border"
-        android:onClick="choisirContact"/>
-
-        <TextView
-        android:id="@+id/numDisplay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-        <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/button_valider_numero"
-            android:background="@drawable/custom_button_border"
+            android:id="@+id/titreRenseignerNumero"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/valider"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:onClick="validerNumero"/>
-    </android.support.constraint.ConstraintLayout>
+            android:text="@string/titreRenseignerNumero"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_choisir_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:background="@drawable/custom_button_border"
+            android:onClick="choisirContact"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/numDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button_valider_numero"
+                        android:background="@drawable/custom_button_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/valider"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:onClick="validerNumero"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
+
 </LinearLayout>

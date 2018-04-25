@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.cbs.cbs.Models.Adresse;
 import com.example.cbs.cbs.Models.Contact;
@@ -131,13 +132,13 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
      * @param view
      */
     public void updateDefaultParam(View view) {
-
-    if (codePinHasChanged()) {
-        String codePin = edit_code_pin.getText().toString();
-        updateCodePinSharedPreferences(codePin);
-    }
-
-    startActivity(new Intent(ParametreDefautActivity.this, MainActivity.class));
+        int longueurPin = edit_code_pin.getText().length();
+        if (codePinHasChanged() && longueurPin==5) {
+            String codePin = edit_code_pin.getText().toString();
+            updateCodePinSharedPreferences(codePin);
+        }
+            Toast.makeText(this, "Nouveaux paramètre par défaut enregistré", Toast.LENGTH_LONG);
+        startActivity(new Intent(ParametreDefautActivity.this, MainActivity.class));
 
     }
 
@@ -267,10 +268,10 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
      * Lit les SharedPreferences et mets à jours l'interface graphique
      */
     private void initializingDefaultVariables() {
-        String nomContact = prefs.getString("nomContact", null);
-        String numeroContact = prefs.getString("numeroContact", null);
-        String adresse = prefs.getString("adresse", null);
-        String codePin = prefs.getString("codePin",null);
+        String nomContact = prefs.getString("nomContact", "");
+        String numeroContact = prefs.getString("numeroContact", "");
+        String adresse = prefs.getString("adresse", "");
+        String codePin = prefs.getString("codePin","");
 
         text_contact.setText(nomContact + " " + numeroContact);
         text_adresse.setText("Adresse actuelle par défaut :  " + adresse);
