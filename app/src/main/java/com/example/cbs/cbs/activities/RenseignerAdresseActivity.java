@@ -96,8 +96,8 @@ public class RenseignerAdresseActivity extends FragmentActivity implements OnMap
         Intent intent = getIntent();
         phoneNumbers = intent.getStringArrayListExtra("phoneNumbers");
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getString("defaultAdresse", "").equals("")) {
-            String defaultAdr = prefs.getString("defaultAdresse", "");
+        if (!prefs.getString("adresse", "").equals("")) {
+            String defaultAdr = prefs.getString("adresse", "");
             TextView defaultAddr = findViewById(R.id.defaultAdresse);
             defaultAddr.setText(defaultAdr);
         }

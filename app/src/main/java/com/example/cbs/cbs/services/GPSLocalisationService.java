@@ -137,6 +137,7 @@ public class GPSLocalisationService extends Service {
             String res = Float.toString(distance[0]);
 
             //TODO TEST A MODIFIER UNE FOIS QUON AURA DE VRAIES VALEURS
+            System.out.println(distance[0]);
             if (distance[0] < 10.0) {
                 Toast.makeText(GPSLocalisationService.this, "Vous êtes arrivé à destination", Toast.LENGTH_SHORT).show();
                 Log.e("GPSUpdate", "Je suis bien arrivé, je suis à :" + res + "mètres de chez moi");

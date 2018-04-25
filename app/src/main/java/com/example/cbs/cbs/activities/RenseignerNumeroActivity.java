@@ -46,9 +46,9 @@ public class RenseignerNumeroActivity extends AppCompatActivity {
 
     private void loadSharedPreferences() {
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getString("defaultNum", "").equals("")) {
-            String defaultNum = prefs.getString("defaultNum", "");
-            String defaultName = prefs.getString("defaultName", "");
+        if (!prefs.getString("nomContact", "").equals("")) {
+            String defaultNum = prefs.getString("numeroContact", "");
+            String defaultName = prefs.getString("nomContact", "");
             phoneNumbers.add(defaultNum);
             names.add(defaultName);
         }

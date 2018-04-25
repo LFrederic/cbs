@@ -210,7 +210,7 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
         editor.putString("nomContact", contact.getNom());
         editor.putString("numeroContact", contact.getNumero());
 
-        text_adresse.setText(contact.getNom() + " " + contact.getNumero());
+        text_contact.setText(contact.getNom() + " " + contact.getNumero());
 
         editor.apply();
     }
@@ -224,6 +224,8 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
 
         editor.putString("adresse", adresse.getAdresse());
         editor.putString("defaultLatLng", adresse.getLatLng().toString());
+
+        text_adresse.setText("Adresse actuelle : " + adresse.getAdresse());
 
         editor.apply();
     }
