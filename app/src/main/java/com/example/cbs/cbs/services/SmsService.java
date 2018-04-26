@@ -9,7 +9,6 @@ import android.util.Log;
 import com.example.cbs.cbs.broadcastreceiver.SmsServiceBroadcastReceiver;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SmsService extends Service {
     private ArrayList<String> phoneNumbers = new ArrayList<>();

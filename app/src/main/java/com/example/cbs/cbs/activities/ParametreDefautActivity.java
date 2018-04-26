@@ -78,18 +78,9 @@ public class ParametreDefautActivity extends FragmentActivity implements OnMapRe
             switch (requestCode) {
                 case RESULT_PICK_CONTACT:
                     contactPicked(data);
-
-                    String nomContact = prefs.getString("nomContact", null);
-                    String numeroContact = prefs.getString("numeroContact", null);
-
-                    text_contact.setText(nomContact + " " + numeroContact);
                     break;
                 case PLACE_PICKER_REQUEST:
                     locationPicked(data);
-
-                    String adresse = prefs.getString("adresse", null);
-
-                    text_adresse.setText("Adresse actuelle par défaut :  " + adresse);
                     break;
             }
         } else {

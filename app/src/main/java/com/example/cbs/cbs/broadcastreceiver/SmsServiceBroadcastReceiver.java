@@ -6,11 +6,6 @@ import android.content.Intent;
 import android.telephony.SmsManager;
 import android.util.Log;
 
-import com.example.cbs.cbs.services.GPSLocalisationService;
-import com.example.cbs.cbs.services.SmsService;
-
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class SmsServiceBroadcastReceiver extends BroadcastReceiver {

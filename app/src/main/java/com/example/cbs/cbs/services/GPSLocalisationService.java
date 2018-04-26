@@ -13,15 +13,8 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.cbs.cbs.broadcastreceiver.SmsServiceBroadcastReceiver;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
-
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Locale;
 
 public class GPSLocalisationService extends Service {
     private static final String TAG = "GpsService";

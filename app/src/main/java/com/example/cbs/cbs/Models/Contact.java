@@ -18,14 +18,4 @@ public class Contact {
     public String getNumero() {
         return numero;
     }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-
 }
