@@ -21,8 +21,7 @@
             android:name=".services.SmsService"
             android:enabled="true" />
 
-        <receiver android:name=".broadcastreceiver.SmsServiceBroadcastReceiver">
-        </receiver>
+        <receiver android:name=".broadcastreceiver.SmsServiceBroadcastReceiver"></receiver>
 
         <activity android:name=".activities.MainActivity">
             <intent-filter>
@@ -39,6 +38,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />
+
+        <activity android:name=".activities.AProposActivity"></activity>
     </application>
 
 </manifest>

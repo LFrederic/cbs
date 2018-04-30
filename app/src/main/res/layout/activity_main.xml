@@ -26,23 +26,36 @@
             android:onClick="goToRenseignerNumeroActivity"/>
 
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:gravity="right|bottom"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
         android:layout_weight="1">
+
         <ImageButton
             android:id="@+id/button_parametres"
             android:src="@drawable/iconparam"
+            android:layout_alignParentLeft="true"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:gravity="right"
             android:layout_marginRight="5pt"
             android:layout_marginBottom="5pt"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:onClick="goToParametreDefautActivity"/>
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/button_a_propos"
+            android:src="@drawable/ic_help"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5pt"
+            android:layout_marginBottom="5pt"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:onClick="goToAProposActivity"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

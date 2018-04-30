@@ -22,4 +22,14 @@
     <string name="btnValiderHeureArrivee">Valider l\'heure d\'arrivée</string>
     <string name="txtAdresse">Adresse à définir</string>
     <string name="text_code_pin">Code PIN : </string>
+
+    <string name="a_propos">
+        Bienvenue dans notre application Come Back Safe, ici, vous trouverez différentes informations concernant le fonctionnement globale de l\'application.\n\n
+A quoi sert-elle ? Ta copine rentre seule ? Tes enfants ne pensent pas à te prévenir quand ils rentrent ? Ta grandmaman est un tantinet perdue avec les nouvelles technologies ? Installe cette application et démarre la sur leurs smartphones quand ils partent quelque part !\n\n
+On te demandera d\'abord de mettre les personnes à contacter ( toi en l\'occurrence ) , puis le lieu d\'arrivé ( chez vous , chez elle , chez eux ) et enfin l\'heure d\'arrivée.  Une fois validée , ils peuvent partir en paix , tu recevras un message quand ils seront arrivés !\n\n
+Pour l\'écran paramètre : on te propose de paramétrer un contact par défaut ( le padre mon gars ) , un lieu d\'arrivé par défaut genre Home .\n\n
+Bref, tout pour que tout le monde soit content.\n\n
+Enfin, parlons de nous , nous sommes une équipe d\'étudiant de Miage Bordeaux. Si vous avez des questions ou des remarques , n\'hésitez pas : akiro.noukamoura@gmail.com\n
+Rentrez safe !
+    </string>
 </resources>

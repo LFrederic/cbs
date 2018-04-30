@@ -38,4 +38,8 @@ public class MainActivity extends AppCompatActivity {
     public void goToRenseignerNumeroActivity(View view) {
         startActivity(new Intent(MainActivity.this, RenseignerNumeroActivity.class));
     }
+
+    public void goToAProposActivity(View view) {
+        startActivity(new Intent(MainActivity.this, AProposActivity.class));
+    }
 }
