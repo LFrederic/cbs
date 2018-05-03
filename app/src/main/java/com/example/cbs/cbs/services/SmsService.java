@@ -39,6 +39,13 @@ public class SmsService extends Service {
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
+
+        NotificationCompat.Builder b = new NotificationCompat.Builder(this, "CBS")
+                .setContentTitle("CBS")
+                .setContentText("trajet en cours...")
+                .setAutoCancel(true)
+                .setSmallIcon(R.drawable.ic_notification);
+        Notification notification = b.build();
         if(android.os.Build.VERSION.SDK_INT >= 26) {
             // create android channel
             NotificationChannel androidChannel = new NotificationChannel("CBS",
@@ -54,15 +61,14 @@ public class SmsService extends Service {
 
             getManager().createNotificationChannel(androidChannel);
 
-            NotificationCompat.Builder b = new NotificationCompat.Builder(this , "CBS")
-                    .setContentTitle("CBS")
-                    .setContentText("trajet en cours...")
-                    .setAutoCancel(true)
-                    .setSmallIcon(R.drawable.ic_notification);
-            Notification notification = b.build();
+
             //Notification notification = new Notification(R.drawable.ic_notification, "trajet en cour...", System.currentTimeMillis());
             startForeground(1337, notification);
         }
+        else{
+            getManager().notify(1337, notification);
+        }
+
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
         registerReceiver(mReceiver, mIntentFilter);
@@ -72,6 +78,7 @@ public class SmsService extends Service {
     public void onDestroy() {
         Log.e("TAG", "onDestroySMS");
         unregisterReceiver(mReceiver);
+        getManager().cancel(1337);
     }
 
     @Override
