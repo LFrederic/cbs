@@ -18,7 +18,7 @@ import java.util.Calendar;
 
 public class GPSLocalisationService extends Service {
     private static final String TAG = "GpsService";
-    private static final int LOCATION_INTERVAL = 10000;
+    private static final int LOCATION_INTERVAL = 2000;
     private static final float LOCATION_DISTANCE = 10f;
     LocationListener[] mLocationListeners = new LocationListener[]{
             new LocationListener(LocationManager.GPS_PROVIDER),
