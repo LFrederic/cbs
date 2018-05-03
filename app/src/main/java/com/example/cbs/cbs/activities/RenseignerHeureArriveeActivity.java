@@ -189,7 +189,13 @@ public class RenseignerHeureArriveeActivity extends AppCompatActivity {
         smsIntent.putExtra("jour", jour);
         smsIntent.putExtra("mois", mois);
         smsIntent.putExtra("annee", annee);
-        startService(smsIntent);
+
+        if(android.os.Build.VERSION.SDK_INT >= 26){
+            startForegroundService(smsIntent);
+        }
+        else{
+            startService(smsIntent);
+        }
 
         //TODO Revenir à l'écran d'accueil avec un toast "Rentrez bien !"
         Intent returnToMainActivity = new Intent(this, MainActivity.class);

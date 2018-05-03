@@ -39,7 +39,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCiKU2nxS7D15zoVHbSg-8O-_2TcXHumW8" />
 
-        <activity android:name=".activities.AProposActivity"></activity>
+        <activity android:name=".activities.AProposActivity"/>
     </application>
 
 </manifest>

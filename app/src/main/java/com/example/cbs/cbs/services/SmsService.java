@@ -1,11 +1,18 @@
 package com.example.cbs.cbs.services;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.IBinder;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.example.cbs.cbs.R;
 import com.example.cbs.cbs.broadcastreceiver.SmsServiceBroadcastReceiver;
 
 import java.util.ArrayList;
@@ -19,6 +26,7 @@ public class SmsService extends Service {
     private int mois;
     private int annee;
     private IntentFilter mIntentFilter;
+    private NotificationManager mManager;
 
     @Override
     public IBinder onBind(Intent arg0) {
@@ -31,6 +39,30 @@ public class SmsService extends Service {
     @Override
     public void onCreate() {
         Log.e("TAG", "onCreateSMS");
+        if(android.os.Build.VERSION.SDK_INT >= 26) {
+            // create android channel
+            NotificationChannel androidChannel = new NotificationChannel("CBS",
+                    "CBS CHANNEL", NotificationManager.IMPORTANCE_DEFAULT);
+            // Sets whether notifications posted to this channel should display notification lights
+            androidChannel.enableLights(true);
+            // Sets whether notification posted to this channel should vibrate.
+            androidChannel.enableVibration(true);
+            // Sets the notification light color for notifications posted to this channel
+            androidChannel.setLightColor(Color.GREEN);
+            // Sets whether notifications posted to this channel appear on the lockscreen or not
+            androidChannel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
+
+            getManager().createNotificationChannel(androidChannel);
+
+            NotificationCompat.Builder b = new NotificationCompat.Builder(this , "CBS")
+                    .setContentTitle("CBS")
+                    .setContentText("trajet en cours...")
+                    .setAutoCancel(true)
+                    .setSmallIcon(R.drawable.ic_notification);
+            Notification notification = b.build();
+            //Notification notification = new Notification(R.drawable.ic_notification, "trajet en cour...", System.currentTimeMillis());
+            startForeground(1337, notification);
+        }
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction("com.example.broadcast.GPS_NOTIFICATION");
         registerReceiver(mReceiver, mIntentFilter);
@@ -63,5 +95,12 @@ public class SmsService extends Service {
         gpsIntent.putStringArrayListExtra("phoneNumbers", phoneNumbers);
         startService(gpsIntent);
         return START_REDELIVER_INTENT;
+    }
+
+    private NotificationManager getManager() {
+        if (mManager == null) {
+            mManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        }
+        return mManager;
     }
 }
